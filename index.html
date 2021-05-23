@@ -6,80 +6,87 @@
     </head>
     <body>
         <header class="main-header">
+
+            <div class="">
+                <a class="logo" href="#">
+                    <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип компании...">
+                </a>
+                <form action="#" method="get">
+                    <input type="search" placeholder="Поиск:">
+                </form>
+                <ul class="user-menu">
+                    <li><a href="#">Закладки:0</a></li>
+                    <li><a href="#">Корзина:0</a></li>
+                    <li><a href="#">Оформить заказ</a></li>
+                </ul>
+            </div>
+
+            <div class="">
                 <div class="">
-                    <a class="logo" href="#">
-                        <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип компании...">
-                    </a>
-                    <form>
-                    <!--строка поиска-->    
-                    </form>
-                    <ul class="user-menu">
-                        <li><a href="#">Закладки</a></li>
-                        <li><a href="#">Корзина</a></li>
-                        <li><a href="#">Оформить заказ</a></li>
-                    </ul>
-                </div>
-                <div class="">
-                    <ul class="">
-                        <li> 
-                            <p>Интернет-магазин <!--здесь ведь другой тег ?-->   
-                                <br> 
-                                строительных материалов
-                                <br> 
-                                и инструментов для ремонта
-                            </p>
-                        </li>
-                        <li>
-                            <a class="shop-phone" href="tel:+7800558628">+7 800 555-86-28</a>
-                            <p>г. Санкт-Петербург,наб.Реки Карповки, 5 лит П</p>
-                        </li>
-                        <li><a href="#"></a>Войти</li>
-                        <li><a href="#">Регистрация</a></li>
-                    </ul>
+                    <p>Интернет-магазин 
+                    <br> 
+                    строительных материалов
+                    <br> 
+                    и инструментов для ремонта
+                    </p>
                 </div>
 
-                <nav class="">
-                    <ul class="shop-menu">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Компания</a></li>
-                        <li><a href="catalog.html">Каталог</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Спецпредложения</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
+                <div class="">
+                    <a class="shop-phone" href="tel:+7800558628">+7 800 555-86-28</a>
+                    <p>г. Санкт-Петербург,наб.Реки Карповки, 5 лит П</p>
+                </div>
+
+                <div class="">
+                    <a href="#">Войти</a>
+                    <a href="#">Регистрация</a>
+                </div>
+            </div>
+
+            <nav class="">
+                <ul class="shop-menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Спецпредложения</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
-            <!--Это же будет строиться на гридах??-->
-            <section class="promo">
-                <article class="materials"><!--опять же, мне кажется здесь лучше div-->
-                    <h3>Материалы</h3>
-                    <button type="button">НА ЛЮБОЙ ВКУС</button>
-                    <img src="https://via.placeholder.com/44x65" width="44" height="65" alt="Иконка 1">
-                </article>
-                <article class="tools">
-                    <h3>Инструмент</h3>
-                    <button type="button">НА ВСЕ СЛУЧАИ</button>
-                    <img src="https://via.placeholder.com/75x61" width="75" height="61" alt="Иконка 2">
-                </article>
-                <article class="technics">
-                    <h3>Техника</h3>
-                    <button type="button">ДЛЯ СТРОЙКИ</button>
-                    <img src="https://via.placeholder.com/78x62" width="78" height="62" alt="Иконка 3">
-                </article>
-                <article class="discount">
-                    <h3>Скидка 50%</h3>
-                    <button type="button">НА 350 ТОВАРОВ</button>
-                    <img src="https://via.placeholder.com/59x72" width="59" height="72" alt="Иконка 4">
-                </article>
-                <article class="delivery">
-                    <h3>Доставка</h3>
-                    <button type="button">БЕСПЛАТНО</button>
-                    <img src="https://via.placeholder.com/78x63" width="78" height="63" alt="Иконка 5">
-                </article>
-                <article class="slider">
+            <h1>Интерент магазин строительных материалов</h1><!--скрыть заголовок-->
+            <section class="promo-blocks">
+                <h2>ПРОМОБЛОКИ</h2><!--скрыть заголовок-->
+                <ul>
+                    <li class="promo materials">
+                        <h3>Материалы</h3>
+                        <button type="button">НА ЛЮБОЙ ВКУС</button>
+                        <img src="https://via.placeholder.com/44x65" width="44" height="65" alt="Иконка 1">
+                    </li>
+                    <li class="promo tools">
+                        <h3>Инструмент</h3>
+                        <button type="button">НА ВСЕ СЛУЧАИ</button>
+                        <img src="https://via.placeholder.com/75x61" width="75" height="61" alt="Иконка 2">
+                    </li>
+                    <li class="promo technics">
+                        <h3>Техника</h3>
+                        <button type="button">ДЛЯ СТРОЙКИ</button>
+                        <img src="https://via.placeholder.com/78x62" width="78" height="62" alt="Иконка 3">
+                    </li>
+                    <li class="promo discount">
+                        <h3>Скидка 50%</h3>
+                        <button type="button">НА 350 ТОВАРОВ</button>
+                        <img src="https://via.placeholder.com/59x72" width="59" height="72" alt="Иконка 4">
+                    </li>
+                    <li class="promo delivery">
+                        <h3>Доставка</h3>
+                        <button type="button">БЕСПЛАТНО</button>
+                        <img src="https://via.placeholder.com/78x63" width="78" height="63" alt="Иконка 5">
+                    </li>
+                </ul>   
+                <div class="slider">
                     <!--Элементы слайдов попозже добавлю, когда разберусь как их делать-->
                     <h3>Перфораторы</h3>
                     <p>Настоящие мужские игрушки</p>
@@ -89,12 +96,12 @@
                     <p>Соседям на радость</p>
                     <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
                     -->
-                </article>
+                </div>
             </section>
 
-            <section class="popular goods">
+            <section class="popular-goods">
                 <div>
-                    <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+                    <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2> 
                     <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                 </div>
                 <ul class="">
@@ -134,9 +141,9 @@
             </section>
 
 
-            <section class="popular manufacturers">
+            <section class="popular-manufacturers">
                 <div>
-                    <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+                    <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2><!--скрыть заголовок-->
                     <a href="catalog.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
                 </div>
                 <ul class="">
@@ -187,7 +194,7 @@
                     <li>Кредит</li>
                 </ul>
                 <div>
-                    <h2>ДОСТАВКА</h2>
+                    <h3>ДОСТАВКА</h3>
                     <p>
                         Мы с удовольствием доставим ваш товар прямо 
                         <br>
@@ -200,7 +207,7 @@
                     <img src="https://via.placeholder.com/465x285" width="465" height="285" alt="Доставка">
                 </div>
                 <div>
-                    <h2>ГАРАНТИЯ</h2>
+                    <h3>ГАРАНТИЯ</h3>
                     <p>
                         Если купленный у нас товар поломается или заискрит,
                         <br>
@@ -215,7 +222,7 @@
                     <img src="https://via.placeholder.com/465x285" width="465" height="285" alt="Гарантия">
                 </div>
                 <div>
-                    <h2>КРЕДИТ</h2>
+                    <h3>КРЕДИТ</h3>
                     <p>
                         Залезть в долговую яму стало проще!
                         <br>
@@ -225,17 +232,19 @@
                     <img src="https://via.placeholder.com/465x285" width="465" height="285" alt="Кредит">
                 </div>
             </section>
+
+
             <section class="contacts">
-                <!--section внутри section возможен? или лучше разбить на div??-->
+                <h2>ПОДРОБНЕЕ О КОМПАНИИ</h2>
                 <section>
                     <h2>КОМПАНИЯ «Техномарт»</h2>
                     <p>
                         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
                         <br>
                         ремонта и строительства не оставит равнодушными любителей сэкономить на
-                        <br>
                         гастарбайтерах.
-
+                        <br>
+                        <br>
                         Мы можем доставить ваш товар в самые отдаленные точки России!
                         <br>
                         Техномарт работает со многими транспортными компаниями:
@@ -247,6 +256,7 @@
                     </ul>
                     <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
                 </section>
+                
                 <section>
                     <h2>КОНТАКТЫ</h2>
                     <p>
@@ -264,11 +274,11 @@
         </main>
 
         <footer class="main-footer">
-            <section>
+            <div class="">
                 <a class="logo" href="#">
                     <img src="https://via.placeholder.com/130x220" width="130" height="220" alt="Логотип компании...">
                 </a>
-                <ul class="user-menu">
+                <ul class="shop-menu-footer">
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="#">Каталог</a></li>
@@ -285,15 +295,17 @@
                     <li><a href="#">Инструмент</a></li>
                     <li><a href="#">Спецпредложения</a></li>
                 </ul>
-             </section>
-             <div>
+             </div>
+
+             <div class="">
                  <p>
                     © 2010–2021 Компания «Техномарт»
                     <br>
                     Все права защищены
                  </p>
              </div>
-             <section> <!--или лучше все же div??-->
+
+             <div class="">
                 <ul>
                     <li>
                       <a href="https://vk.com/htmlacademy">Вконтакте</a>
@@ -305,15 +317,17 @@
                       <a href="https://instagram.com/htmlacademy">Инстаграм</a>
                     </li>
                   </ul>
-             </section>
-             <p>
-                Обратная связь: 
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-             </p>
-             <p>
-                Разработано -
-                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-              </p>
+             </div>
+             <div class="">
+                <p>
+                    Обратная связь: 
+                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </p>
+                <p>
+                    Разработано -
+                    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </p>
+            </div>
         </footer>
         <!--Feedback (форму обращения) во 2 версии отправлю-->
     </body>
