@@ -10,8 +10,8 @@
                 <a class="logo" href="#">
                     <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип компании...">
                 </a>
-                <form>
-                <!--строка поиска-->    
+                <form action="#" method="get">
+                    <input type="search" placeholder="Поиск:">
                 </form>
                 <ul class="user-menu">
                     <li><a href="#">Закладки</a></li>
@@ -83,50 +83,237 @@
 
             <section>
                 <h2>Фильтр товаров</h2>
-                <form method="get" action="https://echo.htmlacademy.ru">
-                   <fieldset>
-                     <legend>ПРОИЗВОДИТЕЛИ:</legend>
-                     <ul>
-                       <li>
-                         <input type="checkbox" name="bosh" id="filter-bosh" checked>
-                         <label for="filter-bosh">BOSCH</label>
-                       </li>
-                       <li>
-                         <input type="checkbox" name="interskol" id="filter-interskol">
-                         <label for="filter-interskol">ИНТЕРСКОЛ</label>
-                       </li>
-                       <li>
-                         <input type="checkbox" name="makita" id="filter-makita" checked>
-                         <label for="filter-makita">MAKITA</label>
-                       </li>
-                       <li>
-                         <input type="checkbox" name="dewalt" id="filter-dewalt">
-                         <label for="filter-dewalt">DEWALT</label>
-                       </li>
-                       <li>
-                         <input type="checkbox" name="hitachi" id="filter-hitachi">
-                         <label for="filter-hitachi">HITACHI</label>
-                       </li>
-                    </ul>
-                   </fieldset>
-                   <fieldset>
-                     <legend>ПИТАНИЕ:</legend>
-                     <ul>
-                       <li>
-                         <input type="radio" name="power" value="battery" id="filter-battery" checked>
-                         <label for="filter-battery">СЕТЕВЫЕ</label>
-                       </li>
-                       <li>
-                        <input type="radio" name="power" value="supply" id="filter-supply">
-                        <label for="filter-supply">АККУМУЛЯТОРНЫЕ</label>
-                      </li>
-                     </ul>
-                   </fieldset>
-                   <button type="submit">ПОКАЗАТЬ</button>
-                 </form>
+                <ul>
+                    <li>
+                        <a href="#">ФИЛЬТР:</a>
+                    </li>
+                    <li>
+                        <a href="#">СОРТИРОВКА:</a>
+                    </li>
+                    <li>
+                        <a href="#">ПО ЦЕНЕ</a>
+                    </li>
+                    <li>
+                        <a href="#">ПО ТИПУ</a>
+                    </li>
+                    <li>
+                        <a href="#">ПО ФУНКИОНАЛУ</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Верх">
+                        </a>
+                        <a href="#">
+                            <img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Вниз">
+                        </a>
+                    </li>
+                </ul>
+                <form method="get" action="#"></form>
+                    <fieldset>
+                        <legend>ЦЕНА</legend>
+                            <input type="range" id="cost" name="cost" min="0" max="3000" step="1">
+                            <!--Про какие инпуты??
+                            Я как понимаю здесь вводишь цисло и ползунок сам прдвинется как надо-->
+                            <input type="text" placeholder="0">
+                            <input type="text" placeholder="30000">
+                    </fieldset> 
+                    <fieldset>
+                        <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                        <ul>
+                        <li>
+                            <input type="checkbox" name="bosh" id="filter-bosh" checked>
+                            <label for="filter-bosh">BOSCH</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="interskol" id="filter-interskol">
+                            <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="makita" id="filter-makita" checked>
+                            <label for="filter-makita">MAKITA</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="dewalt" id="filter-dewalt">
+                            <label for="filter-dewalt">DEWALT</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="hitachi" id="filter-hitachi">
+                            <label for="filter-hitachi">HITACHI</label>
+                        </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>ПИТАНИЕ:</legend>
+                        <ul>
+                        <li>
+                            <input type="radio" name="power" value="battery" id="filter-battery" checked>
+                            <label for="filter-battery">СЕТЕВЫЕ</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="power" value="supply" id="filter-supply">
+                            <label for="filter-supply">АККУМУЛЯТОРНЫЕ</label>
+                        </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit">ПОКАЗАТЬ</button>
+                </form>
             </section>
-
-            
+            <section class=""">       
+                <h2>ТОВАРЫ:</h2> <!-- скрыть заголовок-->
+                <ul class="">
+                    <li>                 
+                        <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <h3>Перфоратор BOSCH<br> 
+                            BFG 6000</h3>
+                        <s>30500 Р.</s>
+                        <br>
+                        <button type="button">25500 Р.</button>
+                    </li>
+                    <li>                 
+                        <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <h3>Перфоратор BOSCH<br> 
+                            BFG 6000</h3>
+                        <s>30500 Р.</s>
+                        <br>
+                        <button type="button">25500 Р.</button>
+                    </li>
+                    <li><!-- Я понимаю, что это ссылки, но они повляются, когда у ним подводишь курсор, 
+                        и это как отдельное окно, 
+                        но как сейчас это написать, ещё не понимаю                 
+                        <img src="https://via.placeholder.com/135x38" width="135" height="38" alt="КУПИТЬ">
+                        <img src="https://via.placeholder.com/135x38" width="135" height="38" alt="В ЗАКЛАДКИ">
+                        -->
+                        <h3>Перфоратор BOSCH<br> 
+                            BFG 6000</h3>
+                        <s>30500 Р.</s>
+                        <br>
+                        <button type="button">25500 Р.</button>
+                    </li>
+                    <li>                 
+                        <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <h3>Перфоратор BOSCH<br> 
+                            BFG 3000</h3>
+                        <s>22500 Р.</s>
+                        <br>
+                        <button type="button">15500 Р.</button>
+                    </li>
+                    <li>                 
+                        <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <h3>Перфоратор BOSCH<br> 
+                            BFG 6000</h3>
+                        <s>30500 Р.</s>
+                        <br>
+                        <button type="button">25500 Р.</button>
+                    </li>
+                    <li>                 
+                        <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <h3>Перфоратор BOSCH<br>
+                            BFG 2000</h3>
+                        <br>
+                        <button type="button">12500 Р.</button>
+                    </li>
+                    <li>                 
+                        <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <h3>Перфоратор BOSCH<br> 
+                            BFG 3000</h3>
+                        <s>22500 Р.</s>
+                        <br>
+                        <button type="button">15500 Р.</button>
+                    </li>
+                    <li>                 
+                        <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <h3>Перфоратор BOSCH<br>
+                            BFG 2000</h3>
+                        <br>
+                        <button type="button">12500 Р.</button>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a>1</a>
+                      </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">СЛЕДУЮЩАЯ</a>
+                    </li>
+                  </ul>
+            </section>
+            <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </main>
     </body>
+    
+    <footer class="main-footer">
+        <div class="">
+            <a class="logo" href="#">
+                <img src="https://via.placeholder.com/130x220" width="130" height="220" alt="Логотип компании...">
+            </a>
+            <ul class="shop-menu-footer">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <p>
+                г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+            </p>
+            <a class="shop-phone-footer" href="tel:+7800558628">+7 800 555-86-28</a>
+            <ul class="">
+                <li><a href="#">Материалы</a></li>
+                <li><a href="#">Техника</a></li>
+                <li><a href="#">Инструмент</a></li>
+                <li><a href="#">Спецпредложения</a></li>
+            </ul>
+         </div>
+
+         <div class="">
+             <p>
+                © 2010–2021 Компания «Техномарт»
+                <br>
+                Все права защищены
+             </p>
+         </div>
+
+         <div class="">
+            <ul>
+                <li>
+                  <a href="https://vk.com/htmlacademy">Вконтакте</a>
+                </li>
+                <li>
+                  <a href="https://facebook.com/htmlacademy">Фейсбук</a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/htmlacademy">Инстаграм</a>
+                </li>
+              </ul>
+         </div>
+         <div class="">
+            <p>
+                Обратная связь: 
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p>
+                Разработано -
+                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+        </div>
+    </footer>
+
+    <section><!--Cart-->
+        <a href="#">
+            <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="Векторный крестик">
+        </a>
+        <img src="https://via.placeholder.com/66x66" width="66" height="66" alt="Векторная галочка">
+        <p>Товар добавлен в корзину</p>
+        <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
+        <a href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+    </section>
 </html>

@@ -256,7 +256,7 @@
                     </ul>
                     <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
                 </section>
-                
+
                 <section>
                     <h2>КОНТАКТЫ</h2>
                     <p>
@@ -329,6 +329,23 @@
                 </p>
             </div>
         </footer>
-        <!--Feedback (форму обращения) во 2 версии отправлю-->
+       
+    <section> <!--Feedback (форма обращения)-->
+        <form method="get" action="#">
+            <p>
+                <label for="fullname">Ваше Имя:</label>
+                <input id="fullname" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+                <label for="login">Ваш e-mail:</label>
+                <input id="login" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="message">Текст пиьма:</label>
+                <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="button">ОТПРАВИТЬ</button>
+        </form>
+    </section>
     </body>
 </html>
