@@ -50,9 +50,9 @@
             </div>
             <nav class="">
                 <ul class="shop-menu">
-                    <li><a href="#">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="#">Компания</a></li>
-                    <li><a href="#">Каталог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="#">Спецпредложения</a></li>
                     <li><a href="#">Доставка</a></li>
@@ -64,7 +64,7 @@
         <main>
             <ul class="">
               <li>
-                <a href="#">
+                <a href="index.html">
                     <img src="https://via.placeholder.com/14x12" width="14" height="12" alt="Иконка дома">
                 </a>
               </li>  
@@ -85,10 +85,10 @@
                 <h2>Фильтр товаров</h2>
                 <ul>
                     <li>
-                        <a href="#">ФИЛЬТР:</a>
+                        <p>ФИЛЬТР:</p>
                     </li>
                     <li>
-                        <a href="#">СОРТИРОВКА:</a>
+                        <p>СОРТИРОВКА:</p>
                     </li>
                     <li>
                         <a href="#">ПО ЦЕНЕ</a>
@@ -97,7 +97,7 @@
                         <a href="#">ПО ТИПУ</a>
                     </li>
                     <li>
-                        <a href="#">ПО ФУНКИОНАЛУ</a>
+                        <a href="#">ПО ФУНКЦИОНАЛУ</a>
                     </li>
                     <li>
                         <a href="#">
@@ -108,14 +108,12 @@
                         </a>
                     </li>
                 </ul>
-                <form method="get" action="#"></form>
+                <form method="get" action="https://echo.htmlacademy.ru/">
                     <fieldset>
                         <legend>ЦЕНА</legend>
-                            <input type="range" id="cost" name="cost" min="0" max="3000" step="1">
-                            <!--Про какие инпуты??
-                            Я как понимаю здесь вводишь цисло и ползунок сам прдвинется как надо-->
-                            <input type="text" placeholder="0">
-                            <input type="text" placeholder="30000">
+                            <div></div><!--Для ползунка-->           
+                            <label><input type="number" value="0"></label>
+                            <label><input type="number" value="3000"></label>
                     </fieldset> 
                     <fieldset>
                         <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -158,74 +156,118 @@
                     <button type="submit">ПОКАЗАТЬ</button>
                 </form>
             </section>
-            <section class=""">       
+            <section class="">       
                 <h2>ТОВАРЫ:</h2> <!-- скрыть заголовок-->
                 <ul class="">
                     <li>                 
                         <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <div>
+                            <a href="#">КУПИТЬ</a>
+                            <a href="#">В ЗАКЛАДКИ</a>
+                        </div>
                         <h3>Перфоратор BOSCH<br> 
                             BFG 6000</h3>
                         <s>30500 Р.</s>
                         <br>
-                        <button type="button">25500 Р.</button>
+                        <a href="#">25500 Р.</a>
+                        <!--ссылка на страницу товара
+                            что это?
+                            вот это не пойму
+                            я понимаю по смыслу, но не по исполнению
+
+                        у нас в макете 2 страницы: главная и каталог
+                        еще стайлгайд и символы
+                        как сделать ссылку на то, чего нет
+                        или у меня какой-то ограниченный макет
+                        поэтому и понять не могу
+
+                        так то я # быстро поменяю на ссылку 
+                        но откуда она не пойму
+                        
+                        не отправляй из-за этого на переделку
+                     -->
                     </li>
                     <li>                 
                         <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <div>
+                            <a href="#">КУПИТЬ</a>
+                            <a href="#">В ЗАКЛАДКИ</a>
+                        </div>
                         <h3>Перфоратор BOSCH<br> 
                             BFG 6000</h3>
                         <s>30500 Р.</s>
                         <br>
-                        <button type="button">25500 Р.</button>
+                        <a href="#">25500 Р.</a>
                     </li>
-                    <li><!-- Я понимаю, что это ссылки, но они повляются, когда у ним подводишь курсор, 
-                        и это как отдельное окно, 
-                        но как сейчас это написать, ещё не понимаю                 
-                        <img src="https://via.placeholder.com/135x38" width="135" height="38" alt="КУПИТЬ">
-                        <img src="https://via.placeholder.com/135x38" width="135" height="38" alt="В ЗАКЛАДКИ">
-                        -->
+                    <li>
+                        <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <div>
+                            <a href="#">КУПИТЬ</a>
+                            <a href="#">В ЗАКЛАДКИ</a>
+                        </div>
                         <h3>Перфоратор BOSCH<br> 
                             BFG 6000</h3>
                         <s>30500 Р.</s>
                         <br>
-                        <button type="button">25500 Р.</button>
+                        <a href="#">25500 Р.</a>
                     </li>
                     <li>                 
                         <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <div>
+                            <a href="#">КУПИТЬ</a>
+                            <a href="#">В ЗАКЛАДКИ</a>
+                        </div>
                         <h3>Перфоратор BOSCH<br> 
                             BFG 3000</h3>
                         <s>22500 Р.</s>
                         <br>
-                        <button type="button">15500 Р.</button>
+                        <a href="#">15500 Р.</a>
                     </li>
                     <li>                 
                         <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <div>
+                            <a href="#">КУПИТЬ</a>
+                            <a href="#">В ЗАКЛАДКИ</a>
+                        </div>
                         <h3>Перфоратор BOSCH<br> 
                             BFG 6000</h3>
                         <s>30500 Р.</s>
                         <br>
-                        <button type="button">25500 Р.</button>
+                        <a href="#">25500 Р.</a>
                     </li>
                     <li>                 
                         <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <div>
+                            <a href="#">КУПИТЬ</a>
+                            <a href="#">В ЗАКЛАДКИ</a>
+                        </div>
                         <h3>Перфоратор BOSCH<br>
                             BFG 2000</h3>
                         <br>
-                        <button type="button">12500 Р.</button>
+                        <a href="#">12500 Р.</a>
                     </li>
                     <li>                 
                         <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <div>
+                            <a href="#">КУПИТЬ</a>
+                            <a href="#">В ЗАКЛАДКИ</a>
+                        </div>
                         <h3>Перфоратор BOSCH<br> 
                             BFG 3000</h3>
                         <s>22500 Р.</s>
                         <br>
-                        <button type="button">15500 Р.</button>
+                        <a href="#">15500 Р.</a>
                     </li>
                     <li>                 
                         <img src="https://via.placeholder.com/127x112" width="127" height="112" alt="Перфоратор BOSCH">
+                        <div>
+                            <a href="#">КУПИТЬ</a>
+                            <a href="#">В ЗАКЛАДКИ</a>
+                        </div>
                         <h3>Перфоратор BOSCH<br>
                             BFG 2000</h3>
                         <br>
-                        <button type="button">12500 Р.</button>
+                        <a href="#">12500 Р.</a>
                     </li>
                 </ul>
                 <ul>
@@ -247,73 +289,72 @@
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
                 В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+            <footer class="main-footer">
+                    <div class="">
+                        <a class="logo" href="#">
+                            <img src="https://via.placeholder.com/130x220" width="130" height="220" alt="Логотип компании...">
+                        </a>
+                        <ul class="shop-menu-footer">
+                            <li><a href="#">Компания</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <p>
+                            г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+                        </p>
+                        <a class="shop-phone-footer" href="tel:+7800558628">+7 800 555-86-28</a>
+                        <ul class="">
+                            <li><a href="#">Материалы</a></li>
+                            <li><a href="#">Техника</a></li>
+                            <li><a href="#">Инструмент</a></li>
+                            <li><a href="#">Спецпредложения</a></li>
+                        </ul>
+                     </div>
+            
+                     <div class="">
+                         <p>
+                            © 2010–2021 Компания «Техномарт»
+                            <br>
+                            Все права защищены
+                         </p>
+                     </div>
+            
+                     <div class="">
+                        <ul>
+                            <li>
+                              <a href="https://vk.com/htmlacademy">Вконтакте</a>
+                            </li>
+                            <li>
+                              <a href="https://facebook.com/htmlacademy">Фейсбук</a>
+                            </li>
+                            <li>
+                              <a href="https://instagram.com/htmlacademy">Инстаграм</a>
+                            </li>
+                          </ul>
+                     </div>
+                     <div class="">
+                        <p>
+                            Обратная связь: 
+                            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                        </p>
+                        <p>
+                            Разработано -
+                            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                        </p>
+                    </div>
+            </footer>    
         </main>
-    </body>
-    
-    <footer class="main-footer">
-        <div class="">
-            <a class="logo" href="#">
-                <img src="https://via.placeholder.com/130x220" width="130" height="220" alt="Логотип компании...">
+        <section>  <!--Cart-->
+            <h2>Добавление товара в корзину</h2><!--скрыть-->
+            <a href="#">
+                <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="Векторный крестик">
             </a>
-            <ul class="shop-menu-footer">
-                <li><a href="#">Компания</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            <p>
-                г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-            </p>
-            <a class="shop-phone-footer" href="tel:+7800558628">+7 800 555-86-28</a>
-            <ul class="">
-                <li><a href="#">Материалы</a></li>
-                <li><a href="#">Техника</a></li>
-                <li><a href="#">Инструмент</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-            </ul>
-         </div>
-
-         <div class="">
-             <p>
-                © 2010–2021 Компания «Техномарт»
-                <br>
-                Все права защищены
-             </p>
-         </div>
-
-         <div class="">
-            <ul>
-                <li>
-                  <a href="https://vk.com/htmlacademy">Вконтакте</a>
-                </li>
-                <li>
-                  <a href="https://facebook.com/htmlacademy">Фейсбук</a>
-                </li>
-                <li>
-                  <a href="https://instagram.com/htmlacademy">Инстаграм</a>
-                </li>
-              </ul>
-         </div>
-         <div class="">
-            <p>
-                Обратная связь: 
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p>
-                Разработано -
-                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-            </p>
-        </div>
-    </footer>
-
-    <section><!--Cart-->
-        <a href="#">
-            <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="Векторный крестик">
-        </a>
-        <img src="https://via.placeholder.com/66x66" width="66" height="66" alt="Векторная галочка">
-        <p>Товар добавлен в корзину</p>
-        <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
-        <a href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-    </section>
+            <img src="https://via.placeholder.com/66x66" width="66" height="66" alt="Векторная галочка">
+            <p>Товар добавлен в корзину</p>
+            <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
+            <a href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+        </section>    
+    </body>
 </html>
