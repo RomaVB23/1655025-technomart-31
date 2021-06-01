@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <title>HTML Academy: Техномарт</title>
 
+
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
         <link rel="icon" href="favicon.ico" />
         <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="img/favicons/180.png" />
@@ -11,9 +15,9 @@
     </head>
     <body class="page-body">
         <header class="main-header">
-            <div class="main-header-top">
-                <a class="main-header-logo" href="#"
-                    ><!--вот насчет него вопрос
+            <div class="header-top">
+                <a class="header-logo" href="index.html"
+                ><!--вот насчет него вопрос
                          Если так посмотреть
                          это текс в блоке, который прописать дивом
                          красная часть через background-color
@@ -26,19 +30,18 @@
                         alt="Логотип компании..."
                     />
                 </a>
-                <!--background-image-->
-                <form action="#" method="get">
-                    <input type="search" placeholder="Поиск:" />
+                <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+                    <input type="search" placeholder="Поиск:"/>
                 </form>
-                <ul class="user-menu">
-                    <li><a href="#">Закладки:0</a></li>
-                    <li><a href="#">Корзина:0</a></li>
-                    <li><a href="#">Оформить заказ</a></li>
+                <ul class="user-list">
+                    <li class="user-item"><a href="#">Закладки:0</a></li>
+                    <li class="user-item"><a href="#">Корзина:0</a></li>
+                    <li class="user-item"><a href="#">Оформить заказ</a></li>
                 </ul>
             </div>
 
-            <div class="main-header-middle">
-                <div class="">
+            <div class="header-middle">
+                <div class="slogan">
                     <p>
                         Интернет-магазин
                         <br />
@@ -48,16 +51,16 @@
                     </p>
                 </div>
 
-                <div class="">
-                    <a class="shop-phone" href="tel:+7800558628"
+                <div class="site-contact">
+                    <a class="contact-phone" href="tel:+7800558628"
                         >+7 800 555-86-28</a
                     >
                     <p>г. Санкт-Петербург,наб.Реки Карповки, 5 лит П</p>
                 </div>
 
-                <div class="">
-                    <a href="#">Войти</a>
-                    <a href="#">Регистрация</a>
+                <div class="user-navigation">
+                    <a class="login-link" href="#">Войти</a>
+                    <a class="regist-link" href="#">Регистрация</a>
                 </div>
             </div>
 
@@ -74,153 +77,137 @@
             </nav>
         </header>
 
-        <main>
-            <h1>Интерент магазин строительных материалов</h1>
-            <!--скрыть заголовок-->
-            <section class="promo-blocks">
-                <h2>ПРОМОБЛОКИ</h2>
-                <!--скрыть заголовок-->
-                <ul>
-                    <li class="promo materials">
-                        <h3>Материалы</h3>
-                        <button type="button">НА ЛЮБОЙ ВКУС</button>
-                        <!--в следующем пулреквесте уберу img, я понимаю что это backround-image
-                            так мне проще ориентироваться
-                         -->
-                        <img
-                            src="https://via.placeholder.com/44x65"
-                            width="44"
-                            height="65"
-                            alt="Иконка 1"
-                        />
+        <main class="container">
+
+            <h1 class="hiden">Интерент магазин строительных материалов</h1>
+
+            <section class="info"><!--не знал, что promo блокируется addblockom -->
+                <h2 class="hiden">ПРОМОБЛОКИ</h2>
+                <ul class="info-list">
+                    <li class="info materials">
+                        <h3 class="info-title">Материалы</h3>
+                        <button type="info-button">НА ЛЮБОЙ ВКУС</button>
                     </li>
-                    <li class="promo tools">
-                        <h3>Инструмент</h3>
-                        <button type="button">НА ВСЕ СЛУЧАИ</button>
-                        <img
-                            src="https://via.placeholder.com/75x61"
-                            width="75"
-                            height="61"
-                            alt="Иконка 2"
-                        />
+                    <li class="info tools">
+                        <h3 class="info-title">Инструмент</h3>
+                        <button type="info-button">НА ВСЕ СЛУЧАИ</button>
                     </li>
-                    <li class="promo technics">
-                        <h3>Техника</h3>
-                        <button type="button">ДЛЯ СТРОЙКИ</button>
-                        <img
-                            src="https://via.placeholder.com/78x62"
-                            width="78"
-                            height="62"
-                            alt="Иконка 3"
-                        />
+                    <li class="info technics">
+                        <h3 class="info-title">Техника</h3>
+                        <button type="info-button">ДЛЯ СТРОЙКИ</button>
                     </li>
-                    <li class="promo discount">
-                        <h3>Скидка 50%</h3>
-                        <button type="button">НА 350 ТОВАРОВ</button>
-                        <img
-                            src="https://via.placeholder.com/59x72"
-                            width="59"
-                            height="72"
-                            alt="Иконка 4"
-                        />
+                    <li class="info discount">
+                        <h3 class="info-title">Скидка 50%</h3>
+                        <button type="info-button">НА 350 ТОВАРОВ</button>
                     </li>
-                    <li class="promo delivery">
-                        <h3>Доставка</h3>
-                        <button type="button">БЕСПЛАТНО</button>
-                        <img
-                            src="https://via.placeholder.com/78x63"
-                            width="78"
-                            height="63"
-                            alt="Иконка 5"
-                        />
+                    <li class="info delivery">
+                        <h3 class="info-title">Доставка</h3>
+                        <button type="info-button">БЕСПЛАТНО</button>
                     </li>
                 </ul>
                 <div class="slider">
                     <!--Элементы слайдов попозже добавлю, когда разберусь как их делать-->
-                    <h3>Перфораторы</h3>
-                    <p>Настоящие мужские игрушки</p>
-                    <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
-                    <!--
-                    <h3>Дрели</h3>
-                    <p>Соседям на радость</p>
-                    <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
-                    -->
+                    <div class="slider-perf">
+                        <h3 class="perf-title">Перфораторы</h3>
+                        <p class="perf-text" >Настоящие мужские игрушки</p>
+                        <a class="perf-link" href="catalog.html" >ОТКРЫТЬ КАТАЛОГ</a>
+                    </div>
+                     <!--
+                    <div class="slider-drill">
+                        <h3 class="drill-title">Дрели</h3>
+                        <p class="drill-text">Соседям на радость</p>
+                        <a class="drill-link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+
+                        хотя в этом блоке имеет ли смысл ссылка на каталог, когда в каталоге только перфораторы
+                        а не дрели ?????
+                    </div>
+
+                     -->
                 </div>
             </section>
 
-            <section class="popular-goods">
-                <div>
-                    <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-                    <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+            <section class="catalog">
+                <!-- вот подскажи тут
+                  2 дива имеют разный смысл, но оба с одинаковой стилизацией
+                    и чтобы не писать 2 раза свойства в css их лучше назвать одинаково
+                    Поэтому
+                    как лучше назвать классы тогда?
+                    вот как бы ты назвал?
+
+                    stile потом перемениую
+                     но вот так ничего толкового в голову не пришло-->
+
+                <div class="stile">
+                    <h2 class="stile-title">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+                    <a class="stile-link" href="catalog.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                 </div>
-                <ul class="">
-                    <li>
+                <ul class="catalog-list">
+                    <li class="catalog-item">
                         <img
                             src="img/popular-goods/snippet_3.jpg"
                             width="127"
                             height="112"
                             alt="Перфоратор с неусиленной головкой после патрона, прямой ручкой и с маленькой батареей"
                         />
-                        <h3>
+                        <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
                             BFG 9000
                         </h3>
-                        <s>32500 Р.</s>
-                        <a href="#">25500 Р.</a>
+                        <s class="catalog-strike">32500 Р.</s>
+                        <a class="catalog-link" href="#">25500 Р.</a>
                     </li>
-                    <li>
+                    <li class="catalog-item">
                         <img
                             src="img/popular-goods/snippet_2.jpg"
                             width="127"
                             height="112"
                             alt="Перфоратор с усиленной головкой после патрона, с изгибающей ручкой и большой батареей"
                         />
-                        <h3>
+                        <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
                             BFG 3000
                         </h3>
-                        <s>22500 Р.</s>
-                        <a href="#">15500 Р.</a>
+                        <s class="catalog-strike">22500 Р.</s>
+                        <a class="catalog-link" href="#">15500 Р.</a>
                     </li>
-                    <li>
+                    <li class="catalog-item">
                         <img
                             src="img/popular-goods/snippet_1.jpg"
                             width="127"
                             height="112"
                             alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                         />
-                        <h3>
+                        <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
                             BFG 6000
                         </h3>
-                        <s>30500 Р.</s>
-                        <a href="#">25500 Р.</a>
+                        <s class="catalog-strike">30500 Р.</s>
+                        <a class="catalog-link" href="#">25500 Р.</a>
                     </li>
-                    <li>
+                    <li class="catalog-item">
                         <img
                             src="img/popular-goods/snippet_2.jpg"
                             width="127"
                             height="112"
                             alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                         />
-                        <h3>
+                        <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
                             BFG 2000
                         </h3>
-                        <s>22500 Р.</s>
-                        <a href="#">12500 Р.</a>
+                        <s class="catalog-strike">22500 Р.</s>
+                        <a class="catalog-link" href="#">12500 Р.</a>
                     </li>
                 </ul>
             </section>
 
             <section class="popular-manufacturers">
-                <div>
-                    <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-                    <!--скрыть заголовок-->
-                    <a href="catalog.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+                <div class="stile">
+                    <h2 class="stile-title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+                    <a class="stile-link" href="catalog.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
                 </div>
-                <ul class="">
-                    <li>
+                <ul class="manufact-list">
+                    <li class="manufact-item">
                         <!--вот тут тоже задумался
                             можно же сделать блок с белым фоном и размерами 220х145
                             который у всех одинаковый
@@ -230,6 +217,9 @@
                     но потом вспомнил лайв
                     и подумал, что это очень заморочено
                     или нет  ???-->
+
+                    <!--раз в прошлый раз пропустил этот вопрос
+                    то наверное не надо-->
                         <img
                             src="img/popular-manufacturers/bosch.png"
                             width="220"
@@ -237,7 +227,7 @@
                             alt="BOSCH"
                         />
                     </li>
-                    <li>
+                    <li class="manufact-item">
                         <img
                             src="img/popular-manufacturers/makita.png"
                             width="220"
@@ -245,7 +235,7 @@
                             alt="Makita"
                         />
                     </li>
-                    <li>
+                    <li class="manufact-item">
                         <img
                             src="img/popular-manufacturers/dewalt.png"
                             width="220"
@@ -253,7 +243,7 @@
                             alt="DeWalt"
                         />
                     </li>
-                    <li>
+                    <li class="manufact-item">
                         <img
                             src="img/popular-manufacturers/interskol.png"
                             width="220"
@@ -261,7 +251,7 @@
                             alt="Интерскол"
                         />
                     </li>
-                    <li>
+                    <li class="manufact-item">
                         <img
                             src="img/popular-manufacturers/hitachi.png"
                             width="220"
@@ -269,7 +259,7 @@
                             alt="HITACHI"
                         />
                     </li>
-                    <li>
+                    <li class="manufact-item">
                         <img
                             src="img/popular-manufacturers/lg.png"
                             width="220"
@@ -277,7 +267,7 @@
                             alt="LG"
                         />
                     </li>
-                    <li>
+                    <li class="manufact-item">
                         <img
                             src="img/popular-manufacturers/aeg.png"
                             width="220"
@@ -285,7 +275,7 @@
                             alt="AEG"
                         />
                     </li>
-                    <li>
+                    <li class="manufact-item">
                         <img
                             src="img/popular-manufacturers/metabo.png"
                             width="220"
@@ -297,8 +287,8 @@
             </section>
 
             <section class="services">
-                <h2>СЕРВИСЫ</h2>
-                <p>
+                <h2 class="services-title">СЕРВИСЫ</h2>
+                <p class="services-text">
                     Хороший интернет-магазин отличается от плохого не только
                     ценами!<br />
                     Мы стараемся изо всех сил, чтобы сделать ваши покупки
@@ -313,22 +303,22 @@
                         <div class="slide slide3"></div>
                      </div>
                 -->
-                <ul class="">
-                    <li>Доставка</li>
-                    <li>Гарантия</li>
-                    <li>Кредит</li>
+                <ul class="services-list">
+                    <li class="services-item">Доставка</li>
+                    <li class="services-item">Гарантия</li>
+                    <li class="services-item">Кредит</li>
                 </ul>
-                <div>
-                    <h3>ДОСТАВКА</h3>
-                    <p>
+                <div class="delivery">
+                    <h3 class="services-subtitle">ДОСТАВКА</h3>
+                    <p class="services-text">
                         Мы с удовольствием доставим ваш товар прямо к вашему
                         подъезду совершенно бесплатно!
                     </p>
-                    <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                    <p class="services-text">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                 </div>
-                <div>
-                    <h3>ГАРАНТИЯ</h3>
-                    <p>
+                <div class="guarantee">
+                    <h3 class="services-subtitle">ГАРАНТИЯ</h3>
+                    <p class="services-text">
                         Если купленный у нас товар поломается или заискрит,
                         <br />
                         а также в случае пожара, спровоцированного его
@@ -340,22 +330,23 @@
                         Дом уж восстановите как-нибудь сами.
                     </p>
                 </div>
-                <div>
-                    <h3>КРЕДИТ</h3>
+                <div class="credit">
+                    <h3 class="services-subtitle">КРЕДИТ</h3>
                     <p>
                         Залезть в долговую яму стало проще!
-                        <br />
-                        Кредитные консультанты придут вам на помощь.
                     </p>
+                    <p class="services-text">
+                        Кредитные консультанты придут вам на помощь.
+                    </p class="services-text">
                     <button type="button">ОТПРАВИТЬ ЗАЯВКУ</button>
                 </div>
             </section>
 
-            <section class="contacts">
-                <h2>ПОДРОБНЕЕ О КОМПАНИИ</h2>
-                <section>
-                    <h2>КОМПАНИЯ «Техномарт»</h2>
-                    <p>
+            <section class="about-company">
+                <h2 class="hiden">ПОДРОБНЕЕ О КОМПАНИИ</h2>
+                <section class="detail">
+                    <h2 class="detail-tittle">КОМПАНИЯ «Техномарт»</h2>
+                    <p class="detail-text">
                         Настоящий мужской шоппинг начинается здесь! Огромный
                         выбор товаров для
                         <br />
@@ -368,17 +359,17 @@
                         <br />
                         Техномарт работает со многими транспортными компаниями:
                     </p>
-                    <ul>
-                        <li>Деловые линии</li>
-                        <li>Автотрейдинг</li>
-                        <li>ЖелДорЭкспедиция</li>
+                    <ul class="detail-list">
+                        <li class="detail-items">Деловые линии</li>
+                        <li class="detail-items">Автотрейдинг</li>
+                        <li class="detail-items">ЖелДорЭкспедиция</li>
                     </ul>
-                    <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+                    <a class="stile-link" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
                 </section>
 
-                <section>
-                    <h2>КОНТАКТЫ</h2>
-                    <p>
+                <section class="contacts">
+                    <h2 class="contacts-title">КОНТАКТЫ</h2>
+                    <p class="contacts=text">
                         Вы можете забрать товар сами,
                         <br />
                         заехав в наш офис:
@@ -394,14 +385,14 @@
                             alt="Map"
                         />
                     </a>
-                    <a href="#">Заблудились? НАПИШИТЕ НАМ!</a>
+                    <a class="stile-link" href="#">Заблудились? НАПИШИТЕ НАМ!</a>
                 </section>
             </section>
         </main>
 
         <footer class="main-footer">
-            <div class="">
-                <a class="logo" href="#">
+            <div class="footer-logo">
+                <a class="logo" href="index.html">
                     <img
                         src="img/log-foot.svg"
                         width="130"
@@ -409,7 +400,7 @@
                         alt="Логотип компании..."
                     />
                 </a>
-                <ul class="shop-menu-footer">
+                <ul class="footer-navigation">
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
