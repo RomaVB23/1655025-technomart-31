@@ -3,11 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <title>HTML Academy: Техномарт</title>
-
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-
         <link rel="icon" href="favicon.ico" />
         <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="img/favicons/180.png" />
@@ -16,27 +14,27 @@
     <body class="page-body">
         <header class="main-header">
             <div class="header-top">
-                <a class="header-logo" href="index.html"
+                <a class="logo" href="index.html"
                 ><!--вот насчет него вопрос
                          Если так посмотреть
                          это текс в блоке, который прописать дивом
                          красная часть через background-color
                          а техт через p
                          вот только не понял какой стиль или всё же оставить так, как я сделал?? -->
-                    <img
-                        src="img/header/logo.svg"
-                        width="220"
-                        height="47"
+                    <img class="logo-img"
+                        src="img/logo-technomart.svg"
+                        width="108"
+                        height="18"
                         alt="Логотип компании..."
                     />
                 </a>
                 <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-                    <input type="search" placeholder="Поиск:"/>
+                    <input class="input-search input-search--icon" type="search" placeholder="Поиск:"/>
                 </form>
                 <ul class="user-list">
-                    <li class="user-item"><a href="#">Закладки:0</a></li>
-                    <li class="user-item"><a href="#">Корзина:0</a></li>
-                    <li class="user-item"><a href="#">Оформить заказ</a></li>
+                    <li><a class="user-link user-link--bookmark" href="#">Закладки: 0</a></li>
+                    <li><a class="user-link user-link--basket" href="#">Корзина: 0</a></li>
+                    <li><a class="user-link user-link--checkout" href="#">Оформить заказ</a></li>
                 </ul>
             </div>
 
@@ -55,24 +53,24 @@
                     <a class="contact-phone" href="tel:+7800558628"
                         >+7 800 555-86-28</a
                     >
-                    <p>г. Санкт-Петербург,наб.Реки Карповки, 5 лит П</p>
+                    <p class="contact-adress">г. Санкт-Петербург,наб.Реки Карповки, 5 лит П</p>
                 </div>
 
                 <div class="user-navigation">
-                    <a class="login-link" href="#">Войти</a>
-                    <a class="regist-link" href="#">Регистрация</a>
+                    <a class="user-navigation--link login-link" href="#">Войти</a>
+                    <a class="user-navigation--link regist-link" href="#">Регистрация</a>
                 </div>
             </div>
 
             <nav class="site-navigation">
-                <ul class="shop-menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Компания</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Спецпредложения</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
+                <ul class="main-menu">
+                    <li><a class="main-menu--link" href="index.html">Главная</a></li>
+                    <li><a class="main-menu--link" href="#">Компания</a></li>
+                    <li><a class="main-menu--link" href="catalog.html">Каталог</a></li>
+                    <li><a class="main-menu--link" href="#">Новости</a></li>
+                    <li><a class="main-menu--link" href="#">Спецпредложения</a></li>
+                    <li><a class="main-menu--link" href="#">Доставка</a></li>
+                    <li><a class="main-menu--link" href="#">Контакты</a></li>
                 </ul>
             </nav>
         </header>
@@ -81,54 +79,47 @@
 
             <h1 class="hiden">Интерент магазин строительных материалов</h1>
 
-            <section class="info"><!--не знал, что promo блокируется addblockom -->
+            <section class="info-section"><!--не знал, что promo блокируется addblockom -->
                 <h2 class="hiden">ПРОМОБЛОКИ</h2>
                 <ul class="info-list">
                     <li class="info materials">
                         <h3 class="info-title">Материалы</h3>
-                        <button type="info-button">НА ЛЮБОЙ ВКУС</button>
+                        <button class="info-button" type="button">НА ЛЮБОЙ ВКУС</button>
                     </li>
                     <li class="info tools">
                         <h3 class="info-title">Инструмент</h3>
-                        <button type="info-button">НА ВСЕ СЛУЧАИ</button>
+                        <button class="info-button" type="button">НА ВСЕ СЛУЧАИ</button>
                     </li>
                     <li class="info technics">
                         <h3 class="info-title">Техника</h3>
-                        <button type="info-button">ДЛЯ СТРОЙКИ</button>
+                        <button class="info-button" type="button">ДЛЯ СТРОЙКИ</button>
                     </li>
                     <li class="info discount">
                         <h3 class="info-title">Скидка 50%</h3>
-                        <button type="info-button">НА 350 ТОВАРОВ</button>
+                        <button class="info-button" type="button">НА 350 ТОВАРОВ</button>
                     </li>
                     <li class="info delivery">
                         <h3 class="info-title">Доставка</h3>
-                        <button type="info-button">БЕСПЛАТНО</button>
+                        <button class="info-button" type="button">БЕСПЛАТНО</button>
                     </li>
                 </ul>
-                <div class="slider">
-                    <!--Элементы слайдов попозже добавлю, когда разберусь как их делать-->
+                <div class="info-slider">
                     <div class="slider-perf">
-                        <h3 class="perf-title">Перфораторы</h3>
-                        <p class="perf-text" >Настоящие мужские игрушки</p>
-                        <a class="perf-link" href="catalog.html" >ОТКРЫТЬ КАТАЛОГ</a>
+                        <h3 class="info-slider-title">Перфораторы</h3>
+                        <p class="info-slider-text" >Настоящие мужские игрушки</p>
+                        <a class="info-slider-link button" href="catalog.html" >ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
-                     <!--
                     <div class="slider-drill">
-                        <h3 class="drill-title">Дрели</h3>
-                        <p class="drill-text">Соседям на радость</p>
-                        <a class="drill-link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-
-                        хотя в этом блоке имеет ли смысл ссылка на каталог, когда в каталоге только перфораторы
-                        а не дрели ?????
+                        <h3 class="info-slider-title">Дрели</h3>
+                        <p class="info-slider-text">Соседям на радость</p>
+                        <a class="info-slider-link button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
-
-                     -->
                 </div>
             </section>
 
             <section class="catalog">
                 <!-- вот подскажи тут
-                  2 дива имеют разный смысл, но оба с одинаковой стилизацией
+                  2 дива имеют одинаковый смысл, и оба с одинаковой стилизацией
                     и чтобы не писать 2 раза свойства в css их лучше назвать одинаково
                     Поэтому
                     как лучше назвать классы тогда?
@@ -139,11 +130,11 @@
 
                 <div class="stile">
                     <h2 class="stile-title">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-                    <a class="stile-link" href="catalog.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+                    <a class="stile-link button" href="catalog.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                 </div>
                 <ul class="catalog-list">
                     <li class="catalog-item">
-                        <img
+                        <img class="catalog-img"
                             src="img/popular-goods/snippet_3.jpg"
                             width="127"
                             height="112"
@@ -157,7 +148,7 @@
                         <a class="catalog-link" href="#">25500 Р.</a>
                     </li>
                     <li class="catalog-item">
-                        <img
+                        <img class="catalog-img"
                             src="img/popular-goods/snippet_2.jpg"
                             width="127"
                             height="112"
@@ -171,7 +162,7 @@
                         <a class="catalog-link" href="#">15500 Р.</a>
                     </li>
                     <li class="catalog-item">
-                        <img
+                        <img class="catalog-img"
                             src="img/popular-goods/snippet_1.jpg"
                             width="127"
                             height="112"
@@ -185,7 +176,7 @@
                         <a class="catalog-link" href="#">25500 Р.</a>
                     </li>
                     <li class="catalog-item">
-                        <img
+                        <img class="catalog-img"
                             src="img/popular-goods/snippet_2.jpg"
                             width="127"
                             height="112"
@@ -201,13 +192,14 @@
                 </ul>
             </section>
 
-            <section class="popular-manufacturers">
+            <section class="manufact">
                 <div class="stile">
                     <h2 class="stile-title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-                    <a class="stile-link" href="catalog.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+                    <a class="stile-link button" href="catalog.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
                 </div>
                 <ul class="manufact-list">
-                    <li class="manufact-item">
+                    <li class="manufact-item_pr"><!--это как пример
+                                                    потом переменную-->
                         <!--вот тут тоже задумался
                             можно же сделать блок с белым фоном и размерами 220х145
                             который у всех одинаковый
@@ -220,10 +212,10 @@
 
                     <!--раз в прошлый раз пропустил этот вопрос
                     то наверное не надо-->
-                        <img
-                            src="img/popular-manufacturers/bosch.png"
-                            width="220"
-                            height="145"
+                        <img class="manufact-img"
+                            src="img/bosch.png"
+                            width="126"
+                            height="37"
                             alt="BOSCH"
                         />
                     </li>
@@ -308,7 +300,7 @@
                     <li class="services-item">Гарантия</li>
                     <li class="services-item">Кредит</li>
                 </ul>
-                <div class="delivery">
+                <div class="services-delivery">
                     <h3 class="services-subtitle">ДОСТАВКА</h3>
                     <p class="services-text">
                         Мы с удовольствием доставим ваш товар прямо к вашему
@@ -316,7 +308,7 @@
                     </p>
                     <p class="services-text">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                 </div>
-                <div class="guarantee">
+                <div class="services-guarantee">
                     <h3 class="services-subtitle">ГАРАНТИЯ</h3>
                     <p class="services-text">
                         Если купленный у нас товар поломается или заискрит,
@@ -330,7 +322,7 @@
                         Дом уж восстановите как-нибудь сами.
                     </p>
                 </div>
-                <div class="credit">
+                <div class="services-credit">
                     <h3 class="services-subtitle">КРЕДИТ</h3>
                     <p>
                         Залезть в долговую яму стало проще!
@@ -338,15 +330,15 @@
                     <p class="services-text">
                         Кредитные консультанты придут вам на помощь.
                     </p class="services-text">
-                    <button type="button">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    <a class="stile-link button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
                 </div>
             </section>
 
-            <section class="about-company">
+            <section class="details">
                 <h2 class="hiden">ПОДРОБНЕЕ О КОМПАНИИ</h2>
-                <section class="detail">
-                    <h2 class="detail-tittle">КОМПАНИЯ «Техномарт»</h2>
-                    <p class="detail-text">
+                <section class="details-about">
+                    <h2 class="details-tittle">КОМПАНИЯ «Техномарт»</h2>
+                    <p class="details-text">
                         Настоящий мужской шоппинг начинается здесь! Огромный
                         выбор товаров для
                         <br />
@@ -359,17 +351,17 @@
                         <br />
                         Техномарт работает со многими транспортными компаниями:
                     </p>
-                    <ul class="detail-list">
-                        <li class="detail-items">Деловые линии</li>
-                        <li class="detail-items">Автотрейдинг</li>
-                        <li class="detail-items">ЖелДорЭкспедиция</li>
+                    <ul class="details-list">
+                        <li class="details-items">Деловые линии</li>
+                        <li class="details-items">Автотрейдинг</li>
+                        <li class="details-items">ЖелДорЭкспедиция</li>
                     </ul>
-                    <a class="stile-link" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+                    <a class="details-about-link button" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
                 </section>
 
-                <section class="contacts">
-                    <h2 class="contacts-title">КОНТАКТЫ</h2>
-                    <p class="contacts=text">
+                <section class="details-contacts">
+                    <h2 class="details-title">КОНТАКТЫ</h2>
+                    <p class="details-text">
                         Вы можете забрать товар сами,
                         <br />
                         заехав в наш офис:
@@ -385,51 +377,51 @@
                             alt="Map"
                         />
                     </a>
-                    <a class="stile-link" href="#">Заблудились? НАПИШИТЕ НАМ!</a>
+                    <a class="details-contacts-link button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
                 </section>
             </section>
         </main>
 
         <footer class="main-footer">
-            <div class="footer-logo">
+            <div class="footer-top">
                 <a class="logo" href="index.html">
-                    <img
-                        src="img/log-foot.svg"
-                        width="130"
-                        height="220"
+                    <img class="logo-img"
+                        src="img/logo-technomart.svg"
+                        width="108"
+                        height="18"
                         alt="Логотип компании..."
                     />
                 </a>
                 <ul class="footer-navigation">
-                    <li><a href="#">Компания</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a class="footer-navigation--link up" href="#">Компания</a></li>
+                    <li><a class="footer-navigation--link up" href="#">Новости</a></li>
+                    <li><a class="footer-navigation--link up" href="catalog.html">Каталог</a></li>
+                    <li><a class="footer-navigation--link up" href="#">Доставка</a></li>
+                    <li><a class="footer-navigation--link up" href="#">Контакты</a></li>
                 </ul>
-                <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-                <a class="shop-phone-footer" href="tel:+7800558628"
+                <p class="text-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+                <a class="shop-phone-footer text-address" href="tel:+7800558628"
                     >+7 800 555-86-28</a
                 >
-                <ul class="">
-                    <li><a href="#">Материалы</a></li>
-                    <li><a href="#">Техника</a></li>
-                    <li><a href="#">Инструмент</a></li>
-                    <li><a href="#">Спецпредложения</a></li>
+                <ul class="footer-navigation">
+                    <li><a class="footer-navigation--link down" href="#">Материалы</a></li>
+                    <li><a class="footer-navigation--link down" href="#">Техника</a></li>
+                    <li><a class="footer-navigation--link down" href="#">Инструмент</a></li>
+                    <li><a class="footer-navigation--link down" href="#">Спецпредложения</a></li>
                 </ul>
             </div>
 
-            <div class="">
-                <p>
+            <div class="content">
+                <p class="content--text">
                     © 2010–2021 Компания «Техномарт»
                     <br />
                     Все права защищены
                 </p>
             </div>
 
-            <div class="">
-                <ul>
-                    <li>
+            <div class="socials">
+                <ul class="socials-list">
+                    <li class="socials-item">
                         <!--тут надо писать кодом??
 
 
@@ -439,38 +431,36 @@
                     они вместе должны быть
                     или всё же реализовывать по отдельности??
                         -->
-                        <a href="img/social/icon-vk.svg">Вконтакте</a>
+                        <a class="socials-link vk" href="img/social/icon-vk.svg">Вконтакте</a>
                     </li>
-                    <li>
-                        <a href="img/social/icon-fb.svg">Фейсбук</a>
+                    <li class="socials-item">
+                        <a class="socials-link fb" href="img/social/icon-fb.svg">Фейсбук</a>
                     </li>
-                    <li>
-                        <a href="img/social/icon-insta.svg">Инстаграм</a>
+                    <li class="socials-item">
+                        <a class="socials-link insta" href="img/social/icon-insta.svg">Инстаграм</a>
                     </li>
                 </ul>
             </div>
-            <div class="">
-                <p>
+            <div class="responsiveness">
+                <p class="content--text">
                     Обратная связь:
-                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    <a class="responsiveness-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
-                <p>
+                <p class="content--text">
                     Разработано -
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"
+                    <a class="responsiveness-link" href="https://htmlacademy.ru/intensive/htmlcss"
                         >htmlacademy.ru</a
                     >
                 </p>
             </div>
         </footer>
 
-        <section>
-            <!--Feedback (форма обращения)-->
-            <h2>Форма обращения</h2>
-            <!--скрыть-->
-            <form method="get" action="https://echo.htmlacademy.ru/">
+        <section class="feedback-section">
+            <h2 class="hiden">Форма обращения</h2>
+            <form class="feedback-form" method="get" action="https://echo.htmlacademy.ru/">
                 <p>
-                    <label for="fullname">Ваше Имя:</label>
-                    <input
+                    <label class="feedback-label" for="fullname">Ваше Имя:</label>
+                    <input class="feedback-input--name"
                         id="fullname"
                         type="text"
                         name="name"
@@ -478,8 +468,8 @@
                     />
                 </p>
                 <p>
-                    <label for="login">Ваш e-mail:</label>
-                    <input
+                    <label class="feedback-label" for="login">Ваш e-mail:</label>
+                    <input class="feedback-input--login"
                         id="login"
                         type="email"
                         name="email"
@@ -487,14 +477,18 @@
                     />
                 </p>
                 <p>
-                    <label for="message">Текст пиьма:</label>
-                    <textarea
+                    <label class="feedback-label" for="message">Текст пиьма:</label>
+                    <textarea class="feedback-textarea"
                         name="message"
                         id="message"
                         placeholder="В свободной форме"
                     ></textarea>
                 </p>
-                <button type="button">ОТПРАВИТЬ</button>
+                <div class="feedback-block"
+                    <button class=" " type="submit">ОТПРАВИТЬ</button>
+                    <button class="feedback-button button" type="button">ОТПРАВИТЬ</button>
+                </div>
+                <button class="modal-close" type="button">Закрыть</button>
             </form>
         </section>
     </body>

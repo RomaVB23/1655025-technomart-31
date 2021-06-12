@@ -1,4 +1,3 @@
-/* ЭТО ДЛЯ СЕБЯ ПОТОМ УДАЛЮ, ТАК ПРОЩЕ РАБОТАТЬ */
 :root{
     --basic-red: #EE3643;
     --basic-green: #63A63E;
@@ -8,13 +7,681 @@
 
     --white: #FFFFFF;
 
-    --special-ylellow: #FFBF47;
+    --special-yellow: #FFBF47;
     --success: #5FBB2D;
     --error: #BA2732;
+
+    --blue: #3BBCE3;
+    --pink: #DC91D8;
+    --green: #8ED78F;
+    --text: #32425C;
+    --strike: #A9A9A9;
+    --header-top: #293449;
+    --footer-nav-down: #FFD180;
+    --text-address: #F3F7F9;
+    --socials: #212A3A;
+    --feedback: #F4F4F4;
+    --black: #000;
+    --stile-background: #F9F5F0;
+    --border-catalog: #EAEAEA;
 }
 /*
 shadow
 background: #C4C4C4;
 box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 */
+
+body {
+    min-width: 940px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.hiden {
+    display: none;
+}
+
+
+.main-header{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    /* у каждой секции поставил на время margin и padding
+    такой чтоб визуально приятней смотреть было
+    потом уберу*/
+    background-color: var(--basic-background);
+}
+.header-top{
+    font-size: 16px;
+    line-height: 20px;
+    background-color:var(--header-top);
+}
+.logo{
+    background-color: var(--basic-red);
+    padding-top: 13.02px;
+    padding-left: 55.78px;
+    padding-right: 57.4px;
+    padding-bottom: 17.5px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+/* пока это всё примерно, при сетках уже подгоню точнее*/
+}
+.logo:active{
+    background: var(--error);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+.logo-img {
+    vertical-align: middle;
+}
+.input-search {
+    margin-top: 30px;
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+    background-color: var(--header-top);
+    border: none;
+}
+.input-search:focus {
+    background-color: var(--white);
+    color: var(--black);
+}
+.user-list {
+    list-style: none;
+}
+.user-link {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    text-decoration: none;
+}
+.user-link:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+.user-link--checkout{
+    background-color: var(--basic-green);
+}
+.user-link--checkout:hover {
+    background-color: var(--success);
+}
+.slogan {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--basic-red);
+}
+.contact-phone{
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--basic-red);
+    text-decoration: none;
+    border: 3px solid #FFFFFF
+    /* а надо тподьзовать только всегда var при выборе цветов???*/
+}
+.contact-adress{
+    font-family: "Cuprum";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    /*text-align: center;*/
+    color: var(--text);
+}
+
+.user-navigation--link{
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--black);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.0001);
+}
+.user-navigation--link:hover {
+    color: var(--basic-red);
+}
+.user-navigation--link:active {
+    color: var(--basic-greylight);
+}
+.site-navigation{
+    background-color:var(--text);
+    box-shadow: inset 0px -5px 0px #293449;
+}
+.main-menu{
+    list-style: none;
+}
+.main-menu--link{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--white);
+    text-decoration: none;
+}
+.main-menu--link:hover {
+    background-color: var(--header-top);
+}
+.main-menu--link:active {
+    background-color: var(--header-top);
+    opacity: 0.5;
+}
+
+.info-list{
+    list-style: none;
+}
+.info-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--white);
+    /*padding: 20px,163px,73px,23px;*/
+}
+.info{
+    width: 300px;
+    height: 123px;
+}
+.materials{
+    background-color: var(--special-yellow);
+    background-image: url("../img/icon/materials.svg");
+    background-repeat: no-repeat;
+    background-position: 213px;
+}
+.tools{
+    background-color: var(--blue );
+    background-image: url("../img/icon/tools.svg");
+    background-repeat: no-repeat;
+    background-position: 213px;
+}
+.technics{
+    background: var(--pink);
+    background-image: url("../img/icon/technics.svg");
+    background-repeat: no-repeat;
+    background-position: 213px;
+}
+.discount{
+    background: var(--green);
+    background-image: url("../img/icon/discount.svg");
+    background-repeat: no-repeat;
+    background-position: 213px;
+}
+.delivery {
+    background: var(--special-yellow);
+    background-image: url("../img/icon/delivery.svg");
+    background-repeat: no-repeat;
+    background-position: 213px;
+}
+.info-button {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding-left: 23px;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+}
+.info-button:hover {
+    background-color: rgba(197, 197, 197, 0.3);
+}
+.info-button:active {
+    background-color: rgba(169, 169, 169, 0.3);
+}
+.slider-perf {
+    background-image: url("../img/slider-perf.jpg");
+    background-repeat: no-repeat;
+    width: 620px;
+    height: 266px;
+}
+.slider-drill {
+    background-image: url("../img/slider-drill.jpg");
+    background-repeat: no-repeat;
+    width: 620px;
+    height: 266px;
+}
+.info-slider-title {
+    font-family: "Cuprum";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--white)
+}
+.info-slider-text {
+    font-family: "Cuprum";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--white)
+}
+.button {
+    font-family: "Cuprum";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--basic-red);
+    text-decoration: none;
+    border: none;
+}
+.info-slider-link{
+    padding-top: 11px;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-bottom: 9px;
+}
+.button:hover{
+    background-color: rgba(202, 44, 55, 1);
+}
+.button:active {
+    background-color: rgba(186, 39, 50, 1);
+}
+/*
+продублировал из index
+вот подскажи тут
+2 дива имеют одинаковый смысл, и оба с одинаковой стилизацией
+и чтобы не писать 2 раза свойства в css их лучше назвать одинаково
+Поэтому
+как лучше назвать классы тогда?
+вот как бы ты назвал?
+
+stile потом перемениую
+но вот так ничего толкового в голову не пришло*/
+.stile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--stile-background);
+}
+.stile-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--text);
+}
+
+.stile-link {
+    width: 192px;
+    height: 38px;
+    padding-left: 24px;
+    padding-top: 11px;
+    padding-right: 24px;
+    padding-bottom: 9px;
+}
+.catalog {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.catalog-list {
+    list-style: none;
+}
+.catalog-item {
+    width: 220px;
+    height: 318px;
+    border: 1px solid var(--border-catalog);
+}
+/* я заметил что у других изображений
+другие  отступы т.к. разные картинки в размерах,
+сделал на время чтоб приятней смотреть было
+*/
+.catalog-img {
+    margin-top: 6px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.catalog-subtitle {
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    /*margin-left: 18px;
+    margin-right: 17px;*/
+}
+
+.catalog-strike {
+    font-family: "PT Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--strike)
+}
+.catalog-link {
+    display: block;
+    font-family:"PT Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--basic-red);
+    text-decoration: none;
+    width: 141px;
+    height: 38px;
+    padding-top: 10px;
+}
+
+
+
+.manufact{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.manufact-list {
+    list-style: none;
+}
+/*
+вопрос заданный ранее(в индексе), всё ещё актуален
+так же здесь при наведении визуально фон становится белее
+правда в фигме не увидел в чем разница в плане цветового кода
+поэтому не сделал
+
+строка в индексе 204
+*/
+.manufact-item_pr{
+    width: 220px;
+    height: 145px;
+    border: 1px solid rgba(234, 234, 234, 1)
+}
+
+.services {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--basic-background);
+}
+.services-title {
+    font-family: "Cuprum";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.services-text {
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.services-list {
+    list-style: none;
+}
+.services-item {
+    width: 240px;
+    height: 61px;
+    background-color: var(--text);
+    color: var(--white);
+    font-family: "Cuprum";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.services-item:hover {
+    background-color: var(--header-top);
+}
+.services-item:active {
+    background-color: var(--white);
+}
+.services-subtitle {
+    font-family: "Cuprum";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--text);
+}
+.services-text {
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.services-delivery {
+    background-image: url("../img/contacts/delivery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 465px;
+    height: 285px;
+}
+.services-guarantee {
+    background-image: url("../img/contacts/guarantee.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 465px;
+    height: 285px;
+}
+.services-credit {
+    background-image: url("../img/contacts/credit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 465px;
+    height: 285px;
+}
+
+
+
+.details{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.details-tittle {
+    font-family: "Cuprum";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.details-text {
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.details-items {
+    font-family: "Cuprum";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.details-about-link {
+    padding-top: 11px;
+    padding-left: 39.71px;
+    padding-right: 40.29px;
+    padding-bottom: 9px;
+
+}
+.details-contacts-link {
+    padding-top: 11px;
+    padding-left: 61.88px;
+    padding-right: 61.12px;
+    padding-bottom: 9px;
+
+     /*display: block;
+    width: 300px;
+    height: 38px;*/
+}
+
+
+
+.main-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--header-top);
+}
+.footer-top {
+    background-color: var(--text);
+}
+.footer-navigation {
+    list-style: none;
+}
+.footer-navigation--link{
+    font-family: "Cuprum";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+}
+.footer-navigation--link:active {
+    opacity: 0.5;
+}
+.footer-navigation--link:hover {
+    text-decoration: underline;
+}
+.up{
+    color: var(--basic-background)
+}
+.down{
+    color: var(--footer-nav-down)
+}
+.text-address {
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    color: var(--text-address)
+}
+.shop-phone-footer {
+    text-decoration: none;
+}
+.content--text {
+font-family: "Cuprum";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: left;
+color: var(--white);
+}
+/* декоративная часть ведь позже
+тогда и скрою текст*/
+.socials-list {
+    list-style: none;
+}
+.socials-link {
+    background-color: var(--socials);
+}
+.socials-link:hover {
+    background-color: var(--basic-red);
+}
+.socials-link:active {
+    background-color: var(--basic-red);
+}
+.responsiveness-link {
+    color: var(--footer-nav-down);
+    text-decoration: none;
+}
+.responsiveness-link:hover {
+    text-decoration: underline;
+}
+.responsiveness-link:active {
+    color: var(--basic-red);
+}
+
+
+.feedback-label{
+    font-family: "Cuprum";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--strike);
+    border: 2px solid #C5C5C5
+}
+.feedback-block{
+    background-color: var(--feedback);
+    width: 620px;
+    height: 112px;
+}
 
