@@ -78,11 +78,7 @@ body {
 }
 .input-search {
     margin-top: 30px;
-    font-family: "Cuprum";
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
     color: var(--white);
     background-color: var(--header-top);
     border: none;
@@ -131,11 +127,8 @@ body {
     /* а надо тподьзовать только всегда var при выборе цветов???*/
 }
 .contact-adress{
-    font-family: "Cuprum";
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0px;
     /*text-align: center;*/
     color: var(--text);
@@ -144,7 +137,6 @@ body {
 .user-navigation--link{
     font-size: 21px;
     font-style: normal;
-    font-weight: 400;
     line-height: 21px;
     letter-spacing: 0px;
     text-align: center;
@@ -166,10 +158,7 @@ body {
     list-style: none;
 }
 .main-menu--link{
-    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
     color:var(--white);
@@ -233,7 +222,6 @@ body {
 .info-button {
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
     line-height: 18px;
     letter-spacing: 0px;
     text-align: center;
@@ -264,7 +252,6 @@ body {
     height: 266px;
 }
 .info-slider-title {
-    font-family: "Cuprum";
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -274,20 +261,14 @@ body {
     color: var(--white)
 }
 .info-slider-text {
-    font-family: "Cuprum";
-    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
     color: var(--white)
 }
 .button {
-    font-family: "Cuprum";
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
     line-height: 18px;
     letter-spacing: 0px;
     text-align: center;
@@ -329,7 +310,6 @@ stile потом перемениую
 .stile-title {
     font-size: 30px;
     font-style: normal;
-    font-weight: 400;
     line-height: 30px;
     letter-spacing: 0px;
     text-align: left;
@@ -391,7 +371,7 @@ stile потом перемениую
 }
 .catalog-link {
     display: block;
-    font-family:"PT Sans";
+    font-family: "PT Sans";
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -439,10 +419,8 @@ stile потом перемениую
     background-color: var(--basic-background);
 }
 .services-title {
-    font-family: "Cuprum";
     font-size: 30px;
     font-style: normal;
-    font-weight: 400;
     line-height: 30px;
     letter-spacing: 0px;
     text-align: left;
@@ -464,7 +442,6 @@ stile потом перемениую
     height: 61px;
     background-color: var(--text);
     color: var(--white);
-    font-family: "Cuprum";
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
@@ -479,10 +456,8 @@ stile потом перемениую
     background-color: var(--white);
 }
 .services-subtitle {
-    font-family: "Cuprum";
     font-size: 30px;
     font-style: normal;
-    font-weight: 400;
     line-height: 30px;
     letter-spacing: 0px;
     text-align: left;
@@ -528,10 +503,8 @@ stile потом перемениую
     padding-bottom: 20px;
 }
 .details-tittle {
-    font-family: "Cuprum";
     font-size: 30px;
     font-style: normal;
-    font-weight: 400;
     line-height: 30px;
     letter-spacing: 0px;
     text-align: left;
@@ -546,11 +519,7 @@ stile потом перемениую
     text-align: left;
 }
 .details-items {
-    font-family: "Cuprum";
-    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
 }
@@ -588,11 +557,7 @@ stile потом перемениую
     list-style: none;
 }
 .footer-navigation--link{
-    font-family: "Cuprum";
-    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
     text-decoration: none;
@@ -610,11 +575,7 @@ stile потом перемениую
     color: var(--footer-nav-down)
 }
 .text-address {
-    font-family: "Cuprum";
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
     align-items: center;
     color: var(--text-address)
 }
@@ -622,14 +583,11 @@ stile потом перемениую
     text-decoration: none;
 }
 .content--text {
-font-family: "Cuprum";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0px;
-text-align: left;
-color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--white);
 }
 /* декоративная часть ведь позже
 тогда и скрою текст*/
@@ -658,11 +616,7 @@ color: var(--white);
 
 
 .feedback-label{
-    font-family: "Cuprum";
-    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
 }
