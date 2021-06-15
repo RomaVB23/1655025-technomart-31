@@ -1,33 +1,68 @@
 :root{
-    --basic-red: #EE3643;
-    --basic-green: #63A63E;
-    --basic-grey: #3D546F;
-    --basic-greylight: #C5C5C5;
-    --basic-background: #F1F5F7;
+    --basic-red: rgb(238, 54, 67, 1);
+    --basic-green: rgb(99, 166, 62);
+    --basic-grey: rgb(61, 84, 111);
+    --basic-greylight: rgb(197, 197, 197);
+    --basic-background: rgb(241, 245, 247);
 
-    --white: #FFFFFF;
+    --white: rgb(255, 255, 255);
+    --blue: rgb(59, 188, 227);
+    --pink: rgb(220, 145, 216);
+    --green: rgb(142, 215, 143);
+    --black: rgb(0, 0, 0);
 
-    --special-yellow: #FFBF47;
-    --success: #5FBB2D;
-    --error: #BA2732;
+    --special-yellow: rgb(255, 191, 71);
+    --success: rgb(95, 187, 45);
+    --error: rgb(186, 39, 50);
 
-    --blue: #3BBCE3;
-    --pink: #DC91D8;
-    --green: #8ED78F;
-    --text: #32425C;
-    --strike: #A9A9A9;
-    --header-top: #293449;
-    --footer-nav-down: #FFD180;
-    --text-address: #F3F7F9;
-    --socials: #212A3A;
-    --feedback: #F4F4F4;
-    --black: #000;
-    --stile-background: #F9F5F0;
-    --border-catalog: #EAEAEA;
+    --text: rgb(50, 66, 92);
+    --strike: rgb(169, 169, 169);
+    --header-top: rgb(41, 52, 73);
+    --footer-nav-down: rgb(255, 209, 128);
+    --text-address: rgb(243, 247, 249);
+    --stile-background: rgb(249, 245, 240);
+    --feedback: rgb(244, 244, 244);
+    --catalog-item--border: rgb(234, 234, 234);
+    --info-button: rgba(255, 255, 255, 0.3);
+    --info-button--hover: rgba(197, 197, 197, 0.3);
+    --info-button--active: rgba(169, 169, 169, 0.3);
+    --button: var(--basic-red);
+    --button--hover: rgba(202, 44, 55);
+    --button--active: rgba(186, 39, 50);
+    --user-navigation--link: var(--black);
+    --user-navigation--link---hover: var(--basic-red);
+    --user-navigation--link---active: var(--basic-grey);
+    --user-navigation--link---background: rgba(0, 0, 0, 0.0001);
+    --contact-phone--border: var(--white);
+    --logo--background: var(--basic-red);
+    --logo--background---active: var(--error);
+    --logo--box-shadow: rgba(0, 0, 0, 0.24);
+    --user-link: var(--white);
+    --user-link--active: rgba(255, 255, 255, 0.5);
+    --user-link--checkout: var(--basic-green);
+    --user-link--checkout---hover: var(--success);
+    --site-navigation--shadow: var(--header-top);
+    --manufact-item--border: rgba(234, 234, 234);
+    --manufact-img--box-shadow: rgba(0, 0, 0, 0.15);
+    --services-item--background: var(--text);
+    --services-item--background---hover: var(--header-top);
+    --services-item--background---active: var(--white);
+    --socials-link: rgba(33, 42, 58);
+    --socials-link--act-hov: var(--basic-red);
+    --catalog-buy--shadow: rgba(54, 115, 21);
+    --catalog-buy--background: var(--basic-green);
+    --catalog-buy--background---hover: var(--success);
+    --catalog-buy--background---active: rgba(81, 133, 52);
+    --catalog-bookmarks: rgba(99, 166, 62);
+    --catalog-bookmarks--hover: rgba(50, 66, 92);
+    --catalog-page--border: rgba(229, 229, 229);
+    --catalog-page--border---hover: rgba(197, 197, 197);
+    --catalog-page--border---active: rgba(238, 54, 67);
+    --filters-item--background: rgba(247, 243, 236, 1);
 }
 /*
 shadow
-background: #C4C4C4;
+background: rgb(196, 196, 196);
 box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 */
 
@@ -48,30 +83,25 @@ body {
 
 
 .main-header{
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    /* у каждой секции поставил на время margin и padding
-    такой чтоб визуально приятней смотреть было
-    потом уберу*/
     background-color: var(--basic-background);
 }
-.header-top{
+.main-header--top{
     font-size: 16px;
     line-height: 20px;
     background-color:var(--header-top);
 }
 .logo{
-    background-color: var(--basic-red);
+    background-color: var(--logo--background);
     padding-top: 13.02px;
     padding-left: 55.78px;
     padding-right: 57.4px;
     padding-bottom: 17.5px;
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px -5px 0px var(--logo--box-shadow);
 /* пока это всё примерно, при сетках уже подгоню точнее*/
 }
 .logo:active{
-    background: var(--error);
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    background-color: var(--logo--background---active);
+    box-shadow: inset 0px -5px 0px var(--logo--box-shadow);
 }
 .logo-img {
     vertical-align: middle;
@@ -93,17 +123,17 @@ body {
 .user-link {
     font-size: 16px;
     line-height: 20px;
-    color: var(--white);
+    color: var(--user-link);
     text-decoration: none;
 }
 .user-link:active {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--user-link--active);
 }
 .user-link--checkout{
-    background-color: var(--basic-green);
+    background-color: var(--user-link--checkout);
 }
 .user-link--checkout:hover {
-    background-color: var(--success);
+    background-color: var(--user-link--checkout---hover);
 }
 .slogan {
     font-size: 16px;
@@ -123,8 +153,7 @@ body {
     text-align: left;
     color: var(--basic-red);
     text-decoration: none;
-    border: 3px solid #FFFFFF
-    /* а надо тподьзовать только всегда var при выборе цветов???*/
+    border: 3px solid var(--contact-phone--border);
 }
 .contact-adress{
     font-size: 14px;
@@ -140,19 +169,55 @@ body {
     line-height: 21px;
     letter-spacing: 0px;
     text-align: center;
-    color: var(--black);
+    color: var(--user-navigation--link);
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.0001);
+    background-color: var(--user-navigation--link---background);
 }
 .user-navigation--link:hover {
-    color: var(--basic-red);
+    color: var(--user-navigation--link---hover);
 }
 .user-navigation--link:active {
+    color: var(--user-navigation--link---active);
+}
+/*catalog*/
+.box--authorized-visitor--link {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--user-navigation--link---background);
+    color: var(--user-navigation--link);
+}
+.box--user-menu--link {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--text);
+    text-decoration: none;
+}
+.icon-user:hover,
+.icon-exit:hover {
+    /*color: var(--basic-grey);*/
+}
+.box--user-menu--link:hover {
+    color: var(--basic-red);
+}
+.box--authorized-visitor--link:active,
+/*.icon-user:active,
+.icon-exit:active,*/
+.box--user-menu--link:active {
     color: var(--basic-greylight);
 }
+/* end catalog*/
+
 .site-navigation{
     background-color:var(--text);
-    box-shadow: inset 0px -5px 0px #293449;
+    box-shadow: inset 0px -5px 0px var(--site-navigation--shadow);
 }
 .main-menu{
     list-style: none;
@@ -185,39 +250,31 @@ body {
     color: var(--white);
     /*padding: 20px,163px,73px,23px;*/
 }
-.info{
+.info {
     width: 300px;
     height: 123px;
+    background-repeat: no-repeat;
+    background-position: 213px;
 }
-.materials{
+.materials {
     background-color: var(--special-yellow);
     background-image: url("../img/icon/materials.svg");
-    background-repeat: no-repeat;
-    background-position: 213px;
 }
-.tools{
+.tools {
     background-color: var(--blue );
     background-image: url("../img/icon/tools.svg");
-    background-repeat: no-repeat;
-    background-position: 213px;
 }
-.technics{
-    background: var(--pink);
+.technics {
+    background-color: var(--pink);
     background-image: url("../img/icon/technics.svg");
-    background-repeat: no-repeat;
-    background-position: 213px;
 }
-.discount{
-    background: var(--green);
+.discount {
+    background-color: var(--green);
     background-image: url("../img/icon/discount.svg");
-    background-repeat: no-repeat;
-    background-position: 213px;
 }
 .delivery {
-    background: var(--special-yellow);
+    background-color: var(--special-yellow);
     background-image: url("../img/icon/delivery.svg");
-    background-repeat: no-repeat;
-    background-position: 213px;
 }
 .info-button {
     font-size: 14px;
@@ -226,7 +283,7 @@ body {
     letter-spacing: 0px;
     text-align: center;
     color: var(--white);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--info-button);
     border: none;
     padding-left: 23px;
     padding-top: 10px;
@@ -234,10 +291,10 @@ body {
     padding-bottom: 10px;
 }
 .info-button:hover {
-    background-color: rgba(197, 197, 197, 0.3);
+    background-color: var(--info-button--hover);
 }
 .info-button:active {
-    background-color: rgba(169, 169, 169, 0.3);
+    background-color: var(--info-button--active);
 }
 .slider-perf {
     background-image: url("../img/slider-perf.jpg");
@@ -273,7 +330,7 @@ body {
     letter-spacing: 0px;
     text-align: center;
     color: var(--white);
-    background-color: var(--basic-red);
+    background-color: var(--button);
     text-decoration: none;
     border: none;
 }
@@ -284,30 +341,17 @@ body {
     padding-bottom: 9px;
 }
 .button:hover{
-    background-color: rgba(202, 44, 55, 1);
+    background-color: var(--button--hover);
 }
 .button:active {
-    background-color: rgba(186, 39, 50, 1);
+    background-color: var(--button--active);
 }
-/*
-продублировал из index
-вот подскажи тут
-2 дива имеют одинаковый смысл, и оба с одинаковой стилизацией
-и чтобы не писать 2 раза свойства в css их лучше назвать одинаково
-Поэтому
-как лучше назвать классы тогда?
-вот как бы ты назвал?
 
-stile потом перемениую
-но вот так ничего толкового в голову не пришло*/
-.stile {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+.interactive-heading {
     background-color: var(--stile-background);
 }
-.stile-title {
+.interactive-heading--title {
     font-size: 30px;
     font-style: normal;
     line-height: 30px;
@@ -316,7 +360,7 @@ stile потом перемениую
     color: var(--text);
 }
 
-.stile-link {
+.interactive-heading--link {
     width: 192px;
     height: 38px;
     padding-left: 24px;
@@ -324,30 +368,21 @@ stile потом перемениую
     padding-right: 24px;
     padding-bottom: 9px;
 }
-.catalog {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+
+
+
 .catalog-list {
     list-style: none;
 }
 .catalog-item {
     width: 220px;
     height: 318px;
-    border: 1px solid var(--border-catalog);
+    border: 1px solid var(--catalog-item--border);
 }
-/* я заметил что у других изображений
-другие  отступы т.к. разные картинки в размерах,
-сделал на время чтоб приятней смотреть было
-*/
-.catalog-img {
-    margin-top: 6px;
-    margin-left: 18px;
-    margin-right: 18px;
-}
+
 .catalog-subtitle {
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans";
     font-size: 18px;
     font-style: normal;
@@ -360,6 +395,8 @@ stile потом перемениую
 }
 
 .catalog-strike {
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans";
     font-size: 17px;
     font-style: normal;
@@ -373,49 +410,80 @@ stile потом перемениую
     display: block;
     font-family: "PT Sans";
     font-size: 17px;
-    font-style: normal;
     font-weight: 700;
+    width: 141px;
+    height: 38px;
+}
+.catalog-image--box {
+    transform-style: preserve-3d;
+    transition-property: transform, transform;
+    transition-duration: 0.7s, 0.7s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+.catalog-image--box:hover {
+    transform: rotateY(180deg);
+}
+.catalog-img {
+
+    display: block;
+    backface-visibility: hidden;
+}
+.catalog-image--link{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 18px;
     letter-spacing: 0px;
     text-align: center;
-    color: var(--white);
-    background-color: var(--basic-red);
     text-decoration: none;
-    width: 141px;
-    height: 38px;
-    padding-top: 10px;
+    display: block;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.catalog-buy {
+    color: var(--white);
+    background-color: var(--catalog-buy--background);
+    box-shadow: inset 0px -3px 0px var(--catalog-buy--shadow);
+    border-radius: 2px;
+}
+.catalog-buy:hover {
+    background-color: var(--catalog-buy--background---hover);
+}
+.catalog-buy:active {
+    background-color: var(--catalog-buy--background---active);
+}
+.catalog-bookmarks {
+    color: var(--text);
+    border: 3px solid var(--catalog-bookmarks);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.catalog-bookmarks:hover {
+    border: 3px solid var(--catalog-bookmarks--hover);
+}
+.catalog-bookmarks:active {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 
 
-.manufact{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+
 .manufact-list {
     list-style: none;
 }
-/*
-вопрос заданный ранее(в индексе), всё ещё актуален
-так же здесь при наведении визуально фон становится белее
-правда в фигме не увидел в чем разница в плане цветового кода
-поэтому не сделал
-
-строка в индексе 204
-*/
-.manufact-item_pr{
-    width: 220px;
-    height: 145px;
-    border: 1px solid rgba(234, 234, 234, 1)
+.manufact-img {
+    border: 1px solid var(--manufact-item--border);
+}
+.manufact-img:hover {
+    box-shadow: 0px 4px 20px var(--manufact-img--box-shadow);
+}
+.manufact-img:active {
+    opacity: 0.5;
+    box-shadow: 0px 4px 20px var(--manufact-img--box-shadow);
 }
 
 .services {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     background-color: var(--basic-background);
 }
 .services-title {
@@ -440,7 +508,7 @@ stile потом перемениую
 .services-item {
     width: 240px;
     height: 61px;
-    background-color: var(--text);
+    background-color: var(--services-item--background);
     color: var(--white);
     font-size: 21px;
     font-style: normal;
@@ -450,10 +518,11 @@ stile потом перемениую
     text-align: left;
 }
 .services-item:hover {
-    background-color: var(--header-top);
+    background-color: var(--services-item--background---hover);
 }
 .services-item:active {
-    background-color: var(--white);
+    background-color: var(--services-item--background---active);
+    color: var(--text);
 }
 .services-subtitle {
     font-size: 30px;
@@ -496,12 +565,7 @@ stile потом перемениую
 
 
 
-.details{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+
 .details-tittle {
     font-size: 30px;
     font-style: normal;
@@ -544,10 +608,6 @@ stile потом перемениую
 
 
 .main-footer{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     background-color: var(--header-top);
 }
 .footer-top {
@@ -595,13 +655,13 @@ stile потом перемениую
     list-style: none;
 }
 .socials-link {
-    background-color: var(--socials);
+    background-color: var(--socials-link);
 }
 .socials-link:hover {
-    background-color: var(--basic-red);
+    background-color: var(--socials-link--act-hov);
 }
 .socials-link:active {
-    background-color: var(--basic-red);
+    background-color: var(--socials-link--act-hov);
 }
 .responsiveness-link {
     color: var(--footer-nav-down);
@@ -631,7 +691,7 @@ stile потом перемениую
     letter-spacing: 0px;
     text-align: left;
     color: var(--strike);
-    border: 2px solid #C5C5C5
+    border: 2px solid var(--basic-greylight)
 }
 .feedback-block{
     background-color: var(--feedback);
@@ -639,3 +699,132 @@ stile потом перемениую
     height: 112px;
 }
 
+
+/*
+catalog
+*/
+
+.container-list {
+    list-style: none;
+}
+.container-link {
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+
+.filters-list {
+    list-style: none;
+}
+.filters-item {
+    background-color: var(--filters-item--background);
+}
+.filters-text {
+    font-family: 'PT Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.filters-link {
+    font-family: 'PT Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--basic-red);
+    color: var(--black);
+    opacity: 0.3;
+}
+.filters-link:hover {
+    opacity: 1;
+    text-decoration-style: solid;
+}
+.filters-link:active {
+    text-decoration: none;
+    color:  var(--basic-red);
+}
+.filter-label {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+
+.catalog-title {
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    background-color: var(--basic-background);
+    color: var(--text);
+}
+
+.tool-information {
+    background-color: var(--basic-background);
+}
+.tool-information--text{
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.catalog-page--list{
+    list-style: none;
+}
+.catalog-page-link {
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid var(--catalog-page--border);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.catalog-page-link:hover {
+    border: 1px solid var(--catalog-page--border---hover);
+}
+.catalog-page-link:active {
+    border: 1px solid var(--catalog-page--border---active);
+}
+
+.main-header,
+.interactive-heading,
+.catalog,
+.manufact,
+.services,
+.details,
+.main-footer {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* у каждой секции поставил на время margin и padding
+    такой чтоб визуально приятней смотреть было
+    потом уберу*/
+}
