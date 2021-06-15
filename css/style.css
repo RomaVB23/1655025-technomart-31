@@ -59,6 +59,7 @@
     --catalog-page--border---hover: rgba(197, 197, 197);
     --catalog-page--border---active: rgba(238, 54, 67);
     --filters-item--background: rgba(247, 243, 236, 1);
+    --popup-cart-down: rgba(241, 241, 241);
 }
 /*
 shadow
@@ -379,6 +380,9 @@ body {
     height: 318px;
     border: 1px solid var(--catalog-item--border);
 }
+.catalog-item:hover{
+    box-shadow: 0px 4px 20px var(--manufact-img--box-shadow)
+}
 
 .catalog-subtitle {
     margin: 0;
@@ -425,7 +429,6 @@ body {
     transform: rotateY(180deg);
 }
 .catalog-img {
-
     display: block;
     backface-visibility: hidden;
 }
@@ -812,7 +815,26 @@ catalog
 .catalog-page-link:active {
     border: 1px solid var(--catalog-page--border---active);
 }
+.popup-cart {
+    background-color: var(--white);
+}
+.popup-cart-down {
+    background-color: var(--popup-cart-down);
+}
+.popup-cart--text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.continue-button {
+    color: var(--black);
+    background-color: var(--white);
+}
 
+.catalog-item, /* ну и для каталога */
 .main-header,
 .interactive-heading,
 .catalog,

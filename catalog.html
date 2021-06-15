@@ -125,7 +125,7 @@
                     <fieldset>
                         <legend class="filter-legeng">ПРОИЗВОДИТЕЛИ:</legend>
                         <ul class="filters-list">
-                            <li class="filter-option filter-checkbox"></li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="filter-input-checkbox filter-input"
                                     type="checkbox"
                                     name="bosh"
@@ -134,7 +134,7 @@
                                 />
                                 <label class="filter-label" for="filter-bosh">BOSCH</label>
                             </li>
-                            <li class="filter-option filter-checkbox"></li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="filter-input-checkbox filter-input"
                                     type="checkbox"
                                     name="interskol"
@@ -142,7 +142,7 @@
                                 />
                                 <label class="filter-label" for="filter-interskol">ИНТЕРСКОЛ</label>
                             </li>
-                            <li class="filter-option filter-checkbox"></li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="filter-input-checkbox filter-input"
                                     type="checkbox"
                                     name="makita"
@@ -151,7 +151,7 @@
                                 />
                                 <label class="filter-label" for="filter-makita">MAKITA</label>
                             </li>
-                            <li class="filter-option filter-checkbox"></li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="filter-input-checkbox filter-input"
                                     type="checkbox"
                                     name="dewalt"
@@ -159,7 +159,7 @@
                                 />
                                 <label class="filter-label" for="filter-dewalt">DEWALT</label>
                             </li>
-                            <li class="filter-option filter-checkbox"></li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="filter-input-checkbox filter-input"
                                     type="checkbox"
                                     name="hitachi"
@@ -172,7 +172,7 @@
                     <fieldset>
                         <legend class="filter-legeng">ПИТАНИЕ:</legend>
                         <ul class="filters-list">
-                            <li class="filter-option filter-radio"></li>
+                            <li class="filter-option filter-radio">
                                 <input class="filter-input-radio filter-input"
                                     type="radio"
                                     name="power"
@@ -182,7 +182,7 @@
                                 />
                                 <label class="filter-label" for="filter-battery">СЕТЕВЫЕ</label>
                             </li>
-                            <li class="filter-option filter-radio"></li>
+                            <li class="filter-option filter-radio">
                                 <input class="filter-input-radio filter-input"
                                     type="radio"
                                     name="power"
@@ -324,7 +324,7 @@
                             Перфоратор BOSCH<br />
                             BFG 3000
                         </h3>
-                        <s class="catalog-strike"class="catalog-strike">22500 Р.</s>
+                        <s class="catalog-strike">22500 Р.</s>
                         <a class="catalog-link button" href="#">15500 Р.</a>
                     </li>
                     <li class="catalog-item">
@@ -467,25 +467,20 @@
         </main>
         <section class="popup-cart">
             <!--Cart-->
-            <h2>Добавление товара в корзину</h2>
+            <h2 class="hiden">Добавление товара в корзину</h2>
             <!--скрыть-->
-            <a href="#">
-                <img
-                    src="https://via.placeholder.com/21x21"
-                    width="21"
-                    height="21"
-                    alt="Векторный крестик"
-                />
-            </a>
+            <button class="modal-close" type="button">Закрыть</button>
             <img
                 src="https://via.placeholder.com/66x66"
                 width="66"
                 height="66"
                 alt="Векторная галочка"
             />
-            <p>Товар добавлен в корзину</p>
-            <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
-            <a href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+            <p class="popup-cart--text">Товар добавлен в корзину</p>
+            <div class="popup-cart-down">
+                <a class="button checkout-button" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+                <a class="button continue-button" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+             </div>
         </section>
     </body>
 </html>
