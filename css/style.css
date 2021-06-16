@@ -76,7 +76,14 @@ body {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
     color: var(--black);
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 .hiden {
@@ -110,7 +117,6 @@ body {
 }
 .input-search {
     margin-top: 30px;
-    font-style: normal;
     color: var(--white);
     background-color: var(--header-top);
     border: none;
@@ -140,18 +146,14 @@ body {
 .slogan {
     font-size: 16px;
     font-style: italic;
-    font-weight: 400;
     line-height: 23px;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--basic-red);
 }
 .contact-phone{
     font-size: 21px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--basic-red);
     text-decoration: none;
@@ -159,17 +161,13 @@ body {
 }
 .contact-adress{
     font-size: 14px;
-    font-style: normal;
-    letter-spacing: 0px;
     /*text-align: center;*/
     color: var(--text);
 }
 
 .user-navigation--link{
     font-size: 21px;
-    font-style: normal;
     line-height: 21px;
-    letter-spacing: 0px;
     text-align: center;
     color: var(--user-navigation--link);
     text-decoration: none;
@@ -184,10 +182,7 @@ body {
 /*catalog*/
 .box--authorized-visitor--link {
     font-size: 21px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0px;
     text-align: center;
     text-decoration: none;
     background-color: var(--user-navigation--link---background);
@@ -195,9 +190,7 @@ body {
 }
 .box--user-menu--link {
     font-size: 16px;
-    font-style: normal;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: center;
     color: var(--text);
     text-decoration: none;
@@ -225,8 +218,6 @@ body {
     list-style: none;
 }
 .main-menu--link{
-    font-style: normal;
-    letter-spacing: 0px;
     text-align: left;
     color:var(--white);
     text-decoration: none;
@@ -239,15 +230,22 @@ body {
     opacity: 0.5;
 }
 
+
+
 .info-list{
     list-style: none;
+    display: grid;
+    width: 940px;
+    margin-left: 130px;
+    margin-right: 130px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    gap: 20px;
 }
 .info-title {
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--white);
     /*padding: 20px,163px,73px,23px;*/
@@ -261,28 +259,40 @@ body {
 .materials {
     background-color: var(--special-yellow);
     background-image: url("../img/icon/materials.svg");
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 .tools {
     background-color: var(--blue );
     background-image: url("../img/icon/tools.svg");
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
 .technics {
     background-color: var(--pink);
     background-image: url("../img/icon/technics.svg");
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 .discount {
     background-color: var(--green);
     background-image: url("../img/icon/discount.svg");
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 2;
 }
 .delivery {
     background-color: var(--special-yellow);
     background-image: url("../img/icon/delivery.svg");
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-column-end: 3;
+    grid-row-end: 3;
 }
 .info-button {
     font-size: 14px;
-    font-style: normal;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: center;
     color: var(--white);
     background-color: var(--info-button);
@@ -312,24 +322,18 @@ body {
 }
 .info-slider-title {
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: 36px;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--white)
 }
 .info-slider-text {
-    font-style: normal;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--white)
 }
 .button {
     font-size: 14px;
-    font-style: normal;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: center;
     color: var(--white);
     background-color: var(--button);
@@ -355,9 +359,7 @@ body {
 }
 .interactive-heading--title {
     font-size: 30px;
-    font-style: normal;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--text);
 }
@@ -372,9 +374,19 @@ body {
 }
 
 
-
+.catalog {
+    margin-bottom: 70px;
+}
 .catalog-list {
     list-style: none;
+}
+.main-catalog-list {
+    display: grid;
+    width: 940px;
+    margin-left: 130px;
+    margin-right: 130px;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 20px;
 }
 .catalog-item {
     width: 220px;
@@ -390,10 +402,8 @@ body {
     padding: 0;
     font-family: "PT Sans";
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 0px;
     text-align: center;
     /*margin-left: 18px;
     margin-right: 17px;*/
@@ -404,10 +414,8 @@ body {
     padding: 0;
     font-family: "PT Sans";
     font-size: 17px;
-    font-style: normal;
     font-weight: 700;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: center;
     color: var(--strike)
 }
@@ -421,10 +429,14 @@ body {
 }
 .catalog-image--box {
     transform-style: preserve-3d;
-    transition-property: transform, transform;
-    transition-duration: 0.7s, 0.7s;
-    transition-timing-function: ease, ease;
-    transition-delay: 0s, 0s;
+    transition: transform .7s;
+    transition-property: transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    perspective: 900px;
+    -webkit-perspective: 900px;
+
 }
 .catalog-image--box:hover {
     transform: rotateY(180deg);
@@ -432,17 +444,16 @@ body {
 .catalog-img {
     display: block;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .catalog-image--link{
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: center;
     text-decoration: none;
     display: block;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
 }
 .catalog-buy {
@@ -472,9 +483,18 @@ body {
 
 
 
-
+.manufact {
+    margin-bottom: 70px;
+}
 .manufact-list {
     list-style: none;
+    display: grid;
+    width: 940px;
+    margin-left: 130px;
+    margin-right: 130px;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 145px 145px;
+    gap: 20px;
 }
 .manufact-img {
     border: 1px solid var(--manufact-item--border);
@@ -489,21 +509,32 @@ body {
 
 .services {
     background-color: var(--basic-background);
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    justify-self: end;
+    padding-left: 130px;
+    padding-right: 130px;
 }
+.services-block {
+    grid-column: 1 / -1;
+}
+.services-slider {
+    justify-self: end;
+}
+
+/* с этим слайдером вообще попозже разберусь
+пока не разберусь как делать сдайдер
+всё только для глаза
+а не итоговая работа */
 .services-title {
     font-size: 30px;
-    font-style: normal;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: left;
 }
 .services-text {
     font-family: "PT Sans";
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
     text-align: left;
 }
 .services-list {
@@ -515,10 +546,8 @@ body {
     background-color: var(--services-item--background);
     color: var(--white);
     font-size: 21px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: left;
 }
 .services-item:hover {
@@ -530,28 +559,24 @@ body {
 }
 .services-subtitle {
     font-size: 30px;
-    font-style: normal;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--text);
 }
 .services-text {
     font-family: "PT Sans";
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
     text-align: left;
 }
 .services-delivery {
     background-image: url("../img/contacts/delivery.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: end;
     width: 465px;
     height: 285px;
 }
+
 .services-guarantee {
     background-image: url("../img/contacts/guarantee.png");
     background-repeat: no-repeat;
@@ -569,26 +594,29 @@ body {
 
 
 
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 70px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
 
+.details-contacts {
+    justify-self: end;
+}
 .details-tittle {
     font-size: 30px;
-    font-style: normal;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: left;
 }
 .details-text {
     font-family: "PT Sans";
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
     text-align: left;
 }
 .details-items {
-    font-style: normal;
-    letter-spacing: 0px;
     text-align: left;
 }
 .details-about-link {
@@ -604,9 +632,10 @@ body {
     padding-right: 61.12px;
     padding-bottom: 9px;
 
-     /*display: block;
+    display: block;
     width: 300px;
-    height: 38px;*/
+    height: 38px;
+    padding: 0;
 }
 
 
@@ -621,8 +650,6 @@ body {
     list-style: none;
 }
 .footer-navigation--link{
-    font-style: normal;
-    letter-spacing: 0px;
     text-align: left;
     text-decoration: none;
 }
@@ -639,7 +666,6 @@ body {
     color: var(--footer-nav-down)
 }
 .text-address {
-    font-style: normal;
     align-items: center;
     color: var(--text-address)
 }
@@ -648,11 +674,10 @@ body {
 }
 .content--text {
     font-size: 16px;
-    font-style: normal;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--white);
 }
+
 /* декоративная часть ведь позже
 тогда и скрою текст*/
 .socials-list {
@@ -680,8 +705,6 @@ body {
 
 
 .feedback-label{
-    font-style: normal;
-    letter-spacing: 0px;
     text-align: left;
 }
 .feedback-form input[type="text"],
@@ -689,10 +712,7 @@ body {
 .feedback-form textarea {
     font-family: "PT Sans";
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
     text-align: left;
     color: var(--strike);
     border: 2px solid var(--basic-greylight)
@@ -714,10 +734,7 @@ catalog
 .container-link {
     font-family: "PT Sans";
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: left;
     text-decoration: none;
     color: var(--black);
@@ -734,19 +751,13 @@ catalog
 .filters-text {
     font-family: 'PT Sans';
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: left;
 }
 .filters-link {
     font-family: 'PT Sans';
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: left;
     text-decoration-style: dotted;
     text-decoration-color: var(--basic-red);
@@ -763,15 +774,11 @@ catalog
 }
 .filter-label {
     font-family: "PT Sans";
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 19px;
 }
 .filter-button {
     font-family: "PT Sans";
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 18px;
     align-items: center;
@@ -784,10 +791,7 @@ catalog
 
 .catalog-title {
     font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: left;
     background-color: var(--basic-background);
     color: var(--text);
@@ -799,10 +803,7 @@ catalog
 .tool-information--text{
     font-family: "PT Sans";
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
     text-align: left;
 }
 .catalog-page--list{
@@ -811,10 +812,7 @@ catalog
 .catalog-page-link {
     font-family: "PT Sans";
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0px;
     text-align: center;
     text-decoration: none;
     color: var(--black);
@@ -836,10 +834,8 @@ catalog
 }
 .popup-cart--text {
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0px;
     text-align: center;
 }
 .continue-button {
@@ -847,19 +843,4 @@ catalog
     background-color: var(--white);
 }
 
-.catalog-item, /* ну и для каталога */
-.main-header,
-.interactive-heading,
-.catalog,
-.manufact,
-.services,
-.details,
-.main-footer {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /* у каждой секции поставил на время margin и padding
-    такой чтоб визуально приятней смотреть было
-    потом уберу*/
-}
+

@@ -79,7 +79,7 @@
 
             <h1 class="hiden">Интерент магазин строительных материалов</h1>
 
-            <section class="info-section"><!--не знал, что promo блокируется addblockom -->
+            <section class="info-section">
                 <h2 class="hiden">ПРОМОБЛОКИ</h2>
                 <ul class="info-list">
                     <li class="info materials">
@@ -103,18 +103,22 @@
                         <button class="info-button" type="button">БЕСПЛАТНО</button>
                     </li>
                 </ul>
+
                 <div class="info-slider">
                     <div class="slider-perf">
                         <h3 class="info-slider-title">Перфораторы</h3>
                         <p class="info-slider-text" >Настоящие мужские игрушки</p>
                         <a class="info-slider-link button" href="catalog.html" >ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
+                <!--
                     <div class="slider-drill">
                         <h3 class="info-slider-title">Дрели</h3>
                         <p class="info-slider-text">Соседям на радость</p>
                         <a class="info-slider-link button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
+                -->
                 </div>
+
             </section>
 
             <section class="catalog">
@@ -132,9 +136,10 @@
                     <h2 class="interactive-heading--title">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
                     <a class="interactive-heading--link button" href="catalog.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                 </div>
-                <ul class="catalog-list">
+                <ul class="catalog-list main-catalog-list">
                     <li class="catalog-item">
-                        <div class="catalog-image--box">
+                        <div class="a"></div>
+                            <div class="catalog-image--box">
                             <img class="catalog-img"
                                 src="img/popular-goods/snippet_3.jpg"
                                 width="184"
@@ -144,6 +149,9 @@
                                 <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
                                 <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
                         </div>
+
+
+
                             <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
                             BFG 9000
@@ -282,8 +290,8 @@
             </section>
 
             <section class="services">
-                <h2 class="services-title">СЕРВИСЫ</h2>
-                <p class="services-text">
+                <h2 class="services-title services-block">СЕРВИСЫ</h2>
+                <p class="services-text services-block">
                     Хороший интернет-магазин отличается от плохого не только
                     ценами!<br />
                     Мы стараемся изо всех сил, чтобы сделать ваши покупки
@@ -303,37 +311,41 @@
                     <li class="services-item">Гарантия</li>
                     <li class="services-item">Кредит</li>
                 </ul>
-                <div class="services-delivery">
-                    <h3 class="services-subtitle">ДОСТАВКА</h3>
-                    <p class="services-text">
-                        Мы с удовольствием доставим ваш товар прямо к вашему
-                        подъезду совершенно бесплатно!
-                    </p>
-                    <p class="services-text">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                </div>
-                <div class="services-guarantee">
-                    <h3 class="services-subtitle">ГАРАНТИЯ</h3>
-                    <p class="services-text">
-                        Если купленный у нас товар поломается или заискрит,
-                        <br />
-                        а также в случае пожара, спровоцированного его
-                        <br />
-                        возгоранием, вы всегда можете быть уверены в нашей
-                        <br />
-                        гарантии. Мы обменяем сгоревший товар на новый.
-                        <br />
-                        Дом уж восстановите как-нибудь сами.
-                    </p>
-                </div>
-                <div class="services-credit">
-                    <h3 class="services-subtitle">КРЕДИТ</h3>
-                    <p>
-                        Залезть в долговую яму стало проще!
-                    </p>
-                    <p class="services-text">
-                        Кредитные консультанты придут вам на помощь.
-                    </p>
-                    <a class="stile-link button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                <div class="services-slider">
+                    <div class="services-delivery">
+                        <h3 class="services-subtitle">ДОСТАВКА</h3>
+                        <p class="services-text">
+                            Мы с удовольствием доставим ваш товар прямо к вашему
+                            подъезду совершенно бесплатно!
+                        </p>
+                        <p class="services-text">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                    </div>
+                <!--
+                    <div class="services-guarantee">
+                        <h3 class="services-subtitle">ГАРАНТИЯ</h3>
+                        <p class="services-text">
+                            Если купленный у нас товар поломается или заискрит,
+                            <br />
+                            а также в случае пожара, спровоцированного его
+                            <br />
+                            возгоранием, вы всегда можете быть уверены в нашей
+                            <br />
+                            гарантии. Мы обменяем сгоревший товар на новый.
+                            <br />
+                            Дом уж восстановите как-нибудь сами.
+                        </p>
+                    </div>
+                    <div class="services-credit">
+                        <h3 class="services-subtitle">КРЕДИТ</h3>
+                        <p class="services-text">
+                            Залезть в долговую яму стало проще!
+                        </p>
+                        <p class="services-text">
+                            Кредитные консультанты придут вам на помощь.
+                        </p>
+                        <a class="stile-link button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                    </div>
+                 -->
                 </div>
             </section>
 
@@ -456,9 +468,11 @@
                     >
                 </p>
             </div>
+
         </footer>
 
-        <section class="feedback-section">
+        <!--
+        section class="feedback-section">
             <h2 class="hiden">Форма обращения</h2>
             <form class="feedback-form" method="get" action="https://echo.htmlacademy.ru/">
                 <p>
@@ -493,5 +507,6 @@
                 </div>
                 <button class="modal-close" type="button">Закрыть</button>
         </section>
+        -->
     </body>
 </html>
