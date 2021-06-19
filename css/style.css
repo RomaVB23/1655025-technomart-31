@@ -32,7 +32,7 @@
     --user-navigation--link: var(--black);
     --user-navigation--link---hover: var(--basic-red);
     --user-navigation--link---active: var(--basic-grey);
-    --user-navigation--link---background: rgba(0, 0, 0, 0.0001);
+    --user-navigation--link---background: var(--white);
     --contact-phone--border: var(--white);
     --logo--background: var(--basic-red);
     --logo--background---active: var(--error);
@@ -92,19 +92,29 @@ body {
 
 .main-header{
     background-color: var(--basic-background);
+    padding-bottom: 60px;
 }
 .main-header--top{
     font-size: 16px;
     line-height: 20px;
     background-color:var(--header-top);
 }
+.main-header--top-block {
+    display: flex;
+    align-items: center;
+    width: 940px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+}
 .logo{
     background-color: var(--logo--background);
-    padding-top: 13.02px;
-    padding-left: 55.78px;
-    padding-right: 57.4px;
-    padding-bottom: 17.5px;
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 47px;
     box-shadow: inset 0px -5px 0px var(--logo--box-shadow);
+
 /* пока это всё примерно, при сетках уже подгоню точнее*/
 }
 .logo:active{
@@ -112,10 +122,12 @@ body {
     box-shadow: inset 0px -5px 0px var(--logo--box-shadow);
 }
 .logo-img {
-    vertical-align: middle;
+    display: block;
+    margin: auto;
 }
 .input-search {
-    margin-top: 30px;
+    width: 271px;
+    height: 42px;
     color: var(--white);
     background-color: var(--header-top);
     border: none;
@@ -126,12 +138,26 @@ body {
 }
 .user-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    height: 42px;
 }
+
 .user-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 42px;
     font-size: 16px;
     line-height: 20px;
     color: var(--user-link);
     text-decoration: none;
+
 }
 .user-link:active {
     color: var(--user-link--active);
@@ -142,32 +168,66 @@ body {
 .user-link--checkout:hover {
     background-color: var(--user-link--checkout---hover);
 }
+.main-header--middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .slogan {
+    padding-left: 30px;
+    padding-top: 37.5px;
+    padding-bottom: 44.5px;
     font-size: 16px;
     font-style: italic;
     line-height: 23px;
     text-align: left;
     color: var(--basic-red);
+
+}
+.site-contact {
+    display: block;
+    text-align: center;
 }
 .contact-phone{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 45px;
     font-size: 21px;
     font-weight: 700;
     line-height: 30px;
-    text-align: left;
     color: var(--basic-red);
     text-decoration: none;
     border: 3px solid var(--contact-phone--border);
 }
 .contact-adress{
+    margin: 0;
+    padding: 0;
     font-size: 14px;
-    /*text-align: center;*/
     color: var(--text);
 }
-
+.user-navigation {
+    display: flex;
+}
+.login-link {
+    width: 121px;
+    height: 45px;
+}
+.regist-link {
+    width: 150px;
+    height: 45px;
+}
 .user-navigation--link{
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 21px;
     line-height: 21px;
-    text-align: center;
     color: var(--user-navigation--link);
     text-decoration: none;
     background-color: var(--user-navigation--link---background);
@@ -179,7 +239,17 @@ body {
     color: var(--user-navigation--link---active);
 }
 /*catalog*/
+
+.box--user-navigation{
+    display: block;
+    text-align: center;
+}
 .box--authorized-visitor--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 299px;
+    height: 45px;
     font-size: 21px;
     line-height: 21px;
     text-align: center;
@@ -210,14 +280,27 @@ body {
 /* end catalog*/
 
 .site-navigation{
-    background-color:var(--text);
-    box-shadow: inset 0px -5px 0px var(--site-navigation--shadow);
 }
 .main-menu{
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 940px;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    background-color:var(--text);
+    box-shadow: inset 0px -5px 0px var(--site-navigation--shadow);
+
 }
 .main-menu--link{
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding-left: 32px;
+    padding-right: 32px;
     color:var(--white);
     text-decoration: none;
 }
@@ -228,6 +311,9 @@ body {
     background-color: var(--header-top);
     opacity: 0.5;
 }
+/*
+main
+*/
 
 .container {
     box-sizing: border-box;
@@ -238,6 +324,8 @@ body {
 .info-section {
     display: grid;
     grid-template-areas: "info";
+    padding-top: 59px;
+    padding-bottom: 59px;
 }
 .info-list{
     list-style: none;
@@ -267,7 +355,8 @@ ul.info-list::after{
     line-height: 30px;
     text-align: left;
     color: var(--white);
-    /*padding: 20px,163px,73px,23px;*/
+    margin-left: 23px;
+    margin-top: 20px;
 }
 .info {
     width: 300px;
@@ -296,16 +385,18 @@ ul.info-list::after{
     background-image: url("../img/icon/delivery.svg");
 }
 .info-button {
+    margin-left: 23px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 38px;
     font-size: 14px;
     line-height: 18px;
-    text-align: center;
     color: var(--white);
     background-color: var(--info-button);
     border: none;
-    padding-left: 23px;
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 10px;
 }
 .info-button:hover {
     background-color: var(--info-button--hover);
@@ -326,7 +417,9 @@ ul.info-list::after{
     height: 266px;
 }
 .info-slider-title {
-    margin-top: 0;
+    margin: 0;
+    padding-top: 23px;
+    padding-left: 24px;
     font-size: 36px;
     font-weight: 700;
     line-height: 36px;
@@ -334,10 +427,18 @@ ul.info-list::after{
     color: var(--white)
 }
 .info-slider-text {
+    margin:0;
+    padding-top: 5px;
+    padding-left: 24px;
     text-align: left;
     color: var(--white)
 }
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 38px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -347,10 +448,8 @@ ul.info-list::after{
     border: none;
 }
 .info-slider-link{
-    padding-top: 11px;
-    padding-left: 46px;
-    padding-right: 46px;
-    padding-bottom: 9px;
+    margin-top: 113px;
+    margin-left: 24px;
 }
 .button:hover{
     background-color: var(--button--hover);
@@ -361,6 +460,11 @@ ul.info-list::after{
 
 
 .interactive-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    height: 89px;
     background-color: var(--stile-background);
 }
 .interactive-heading--title {
@@ -369,17 +473,9 @@ ul.info-list::after{
     text-align: left;
     color: var(--text);
 }
-
-.interactive-heading--link {
-    width: 192px;
-    height: 38px;
-    padding-left: 24px;
-    padding-top: 11px;
-    padding-right: 24px;
-    padding-bottom: 9px;
+.interactive-heading--link{
+    margin:0 14px;
 }
-
-
 .catalog {
     margin-bottom: 70px;
 }
@@ -514,11 +610,11 @@ ul.info-list::after{
 
 .services {
     background-color: var(--basic-background);
+}
+.services-box {
     display: grid;
     grid-template-columns: 180px 1fr;
     justify-self: end;
-    padding-left: 130px;
-    padding-right: 130px;
 }
 .services-block {
     grid-column: 1 / -1;
@@ -532,11 +628,14 @@ ul.info-list::after{
 всё только для глаза
 а не итоговая работа */
 .services-title {
+    padding-top: 64px;
     font-size: 30px;
     line-height: 30px;
     text-align: left;
 }
 .services-text {
+    padding: 0;
+    margin: 0;
     font-family: "PT Sans";
     font-size: 13px;
     line-height: 24px;
@@ -603,43 +702,49 @@ ul.info-list::after{
 .details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 70px;
+    margin: 70px auto;
 }
 
 .details-contacts {
     justify-self: end;
 }
 .details-tittle {
+    margin-bottom: 24px;
+    padding: 0;
     font-size: 30px;
     line-height: 30px;
     text-align: left;
 }
+.a {
+    margin-top: 20px;
+}
 .details-text {
+    padding: 0;
     font-family: "PT Sans";
     font-size: 13px;
     line-height: 24px;
     text-align: left;
 }
+.detais-list {
+    margin: 0;
+    padding: 0;
+}
 .details-items {
+    margin-bottom: 12px;
     text-align: left;
 }
+.details-map {
+    margin-top: 32px;
+}
 .details-about-link {
-    padding-top: 11px;
-    padding-left: 39.71px;
-    padding-right: 40.29px;
-    padding-bottom: 9px;
-
+    width: 220px;
+    margin-top: 20px;
+    padding: 0;
 }
 .details-contacts-link {
-    padding-top: 11px;
-    padding-left: 61.88px;
-    padding-right: 61.12px;
-    padding-bottom: 9px;
-
-    display: block;
-    width: 300px;
-    height: 38px;
-    padding: 0;
+   width: 300px;
+   margin-top: 25px;
+   padding: 0;
 }
 
 
@@ -650,8 +755,31 @@ ul.info-list::after{
 .footer-top {
     background-color: var(--text);
 }
+.logo-footer {
+    height: 68px;
+}
+.footer-top--container {
+    display: flex;
+    justify-content: space-between;
+}
+.site-contact--footer {
+    width: 339px;
+    height: 49px;
+    margin-top: 22px;
+    margin-bottom: 54px;
+}
+.footer-navigation-up {
+    width: 546px;
+    margin-top: 37px;
+}
+.footer-navigation-down {
+    width: 524px;
+    margin-top: 34px;
+}
 .footer-navigation {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 .footer-navigation--link{
     text-align: left;
@@ -670,11 +798,27 @@ ul.info-list::after{
     color: var(--footer-nav-down)
 }
 .text-address {
+    margin: 0;
+    padding: 0;
     align-items: center;
     color: var(--text-address)
 }
 .shop-phone-footer {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
+}
+.footer-down--container {
+    display: flex;
+    justify-content: space-between;
+}
+.responsiveness{
+    display: flex;
+}
+.responsiveness-developed{
+    margin-left: 51px;
+    margin-right: 20px;;
+
 }
 .content--text {
     font-size: 16px;
@@ -686,6 +830,7 @@ ul.info-list::after{
 тогда и скрою текст*/
 .socials-list {
     list-style: none;
+    display: flex;
 }
 .socials-link {
     background-color: var(--socials-link);
@@ -697,6 +842,7 @@ ul.info-list::after{
     background-color: var(--socials-link--act-hov);
 }
 .responsiveness-link {
+    display: block;
     color: var(--footer-nav-down);
     text-decoration: none;
 }
@@ -735,6 +881,7 @@ catalog
     display: grid;
     grid-template-columns: 220px 1fr;
     align-content: start;
+    gap: 20px;
 }
 .page--catalog-title {
     grid-column: 1 / -1;
@@ -754,9 +901,7 @@ catalog
     padding-left: 0;
     grid-column: 1 / -1;
 }
-.page--catalog-section {
-    margin-left: 20px;
-}
+
 .container-link {
     font-family: "PT Sans";
     font-size: 13px;
@@ -781,7 +926,7 @@ catalog
     text-align: left;
 }
 .filters-link {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-size: 13px;
     line-height: 18px;
     text-align: left;
