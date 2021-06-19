@@ -279,8 +279,7 @@ body {
 }
 /* end catalog*/
 
-.site-navigation{
-}
+
 .main-menu{
     list-style: none;
     margin: 0;
@@ -490,6 +489,9 @@ ul.info-list::after{
     gap: 20px;
 }
 .catalog-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 220px;
     height: 318px;
     border: 1px solid var(--catalog-item--border);
@@ -521,8 +523,7 @@ ul.info-list::after{
     color: var(--strike)
 }
 .catalog-link {
-    display: block;
-    margin: 0;
+    margin-left: 41px;
     font-family: "PT Sans";
     font-size: 17px;
     font-weight: 700;
@@ -553,7 +554,12 @@ ul.info-list::after{
     line-height: 18px;
     text-align: center;
     text-decoration: none;
-    display: block;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 38px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
@@ -715,7 +721,7 @@ ul.info-list::after{
     line-height: 30px;
     text-align: left;
 }
-.a {
+.details-text-down{
     margin-top: 20px;
 }
 .details-text {
