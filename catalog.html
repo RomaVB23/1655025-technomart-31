@@ -80,8 +80,7 @@
             <div class="page-catalog container">
             <ul class="container-list">
                 <li>
-                    <a class="icon-home icon-next" href="index.html">
-                    </a>
+                    <a class="icon-home icon-next" href="index.html"></a>
                 </li>
                 <li>
                     <a class="container-link icon-next" href="#">КАТАЛОГ</a>
@@ -89,43 +88,43 @@
                 <li>
                     <a class="container-link icon-next" href="#">ИНСТРУМЕНТ</a>
                 </li>
-                <li class="container-link icon-next">ПЕРФОРАТОРЫ</li>
+                <li>
+                    <a class="container-link icon-next">ПЕРФОРАТОРЫ</a>
+                </li>
             </ul>
 
             <h1 class="catalog-title page--catalog-title">ПЕРФОРАТОРЫ</h1>
 
-            <ul class="filters-list">
-                <li class="filters-item">
-                    <p class="filters-text">ФИЛЬТР:</p>
-                </li>
-                <li class="filters-item">
-                    <p class="filters-text">СОРТИРОВКА:</p>
-                    <a class="filters-link" href="#">ПО ЦЕНЕ</a>
-                </li>
-                <li class="filters-item">
-                    <a class="filters-link" href="#">ПО ТИПУ</a>
-                </li>
-                <li class="filters-item">
-                    <a class="filters-link" href="#">ПО ФУНКЦИОНАЛУ</a>
-                </li>
-                <li class="filters-item">
-                    <a class="filers-icon filters-icon-up" href="#"> </a>
-                    <a class="filers-icon filters-icon-down" href="#"></a>
-                </li>
-            </ul>
+            <div class="filters-sorting">
+                <h2 class="filters-title">СОРТИРОВКА:</h2>
+                <ul class="filters-sorting--list">
+                    <li class="filters-item">
+                        <a class="filters-link" href="#">ПО ЦЕНЕ</a>
+                    </li>
+                    <li class="filters-item">
+                        <a class="filters-link" href="#">ПО ТИПУ</a>
+                    </li>
+                    <li class="filters-item">
+                        <a class="filters-link" href="#">ПО ФУНКЦИОНАЛУ</a>
+                    </li>
+                    <li class="filters-item">
+                        <a class="filers-icon filters-icon-up" href="#"> </a>
+                        <a class="filers-icon filters-icon-down" href="#"></a>
+                    </li>
+                </ul>
+             </div>
 
             <section class="filters">
-                <h2 class="hiden">Фильтр товаров</h2>
-
+                <h2 class="filters-title filters-title--filter">ФИЛЬТР:</h2>
                 <form method="get" action="https://echo.htmlacademy.ru/">
-                    <fieldset>
+                    <fieldset class="filters-fieldset">
                         <legend class="filter-legeng">ЦЕНА</legend>
                         <div></div>
                         <!--Для ползунка-->
                         <label><input type="number" value="0" /></label>
                         <label><input type="number" value="30000" /></label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filters-fieldset">
                         <legend class="filter-legeng">ПРОИЗВОДИТЕЛИ:</legend>
                         <ul class="filters-list">
                             <li class="filter-option filter-checkbox">
@@ -172,7 +171,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filters-fieldset">
                         <legend class="filter-legeng">ПИТАНИЕ:</legend>
                         <ul class="filters-list">
                             <li class="filter-option filter-radio">
@@ -213,8 +212,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -231,8 +232,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -249,8 +252,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -267,8 +272,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -285,8 +292,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -303,8 +312,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                             </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -320,8 +331,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -338,8 +351,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -356,8 +371,10 @@
                                 height="164"
                                 alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
                             />
-                            <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                            <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <div class="catalog-img--back">
+                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            </div>
                         </div>
                         <h3 class="catalog-subtitle">
                             Перфоратор BOSCH<br />
@@ -387,10 +404,10 @@
                     <h2 class="catalog-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
                     <p class="tool-information--text">
                         Перфоратор — универсальный строительный инструмент. Предназначен
-                        для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                        для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                         Существуют электромеханические и пневматические перфораторы.
                         Современные модели могут выполнять функции дрели, шуруповерта и
-                        отбойного молотка. В ассортиментном ряду есть выбор
+                        отбойного молотка. <br>В ассортиментном ряду есть выбор
                         «трехрежимников»: в одном устройстве будут совмещены отбойный
                         молоток и ударная дрель.
                     </p>
@@ -473,10 +490,9 @@
                 </div>
             </div>
         </footer>
+       <!--
         <section class="popup-cart">
-            <!--Cart-->
             <h2 class="hiden">Добавление товара в корзину</h2>
-            <!--скрыть-->
             <button class="modal-close" type="button">Закрыть</button>
             <img
                 src="https://via.placeholder.com/66x66"
@@ -490,5 +506,6 @@
                 <a class="button continue-button" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
              </div>
         </section>
+        -->
     </body>
 </html>
