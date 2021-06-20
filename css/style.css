@@ -531,6 +531,7 @@ ul.info-list::after{
     height: 38px;
 }
 .catalog-image--box {
+    display: grid;
     transform-style: preserve-3d;
     transition: transform .7s;
     transition-property: transform;
@@ -548,23 +549,37 @@ ul.info-list::after{
     display: block;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+}
+.catalog-img--back {
+    display: block;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    width: 184px;
+    height: 164px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
 }
 .catalog-image--link{
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     text-decoration: none;
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 135px;
     height: 38px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transform: rotateY(180deg);
+
 }
 .catalog-buy {
+    margin-top: 38px;
     color: var(--white);
     background-color: var(--catalog-buy--background);
     box-shadow: inset 0px -3px 0px var(--catalog-buy--shadow);
@@ -577,6 +592,7 @@ ul.info-list::after{
     background-color: var(--catalog-buy--background---active);
 }
 .catalog-bookmarks {
+    margin-top: 10px;
     color: var(--text);
     border: 3px solid var(--catalog-bookmarks);
     box-sizing: border-box;
