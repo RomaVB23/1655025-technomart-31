@@ -106,7 +106,7 @@ body {
 
 .main-header{
     background-color: var(--basic-background);
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 .main-header--top{
     font-size: 16px;
@@ -138,7 +138,7 @@ body {
     margin: auto;
 }
 .input-search {
-    width: 271px;
+    width: 270px;
     height: 42px;
     color: var(--white);
     background-color: var(--header-top);
@@ -193,13 +193,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 149px;
     height: 42px;
-    font-size: 16px;
-    line-height: 20px;
+
     color: var(--user-link);
     text-decoration: none;
-
+    padding-right: 1px;
+    font-size: 18px;
+    line-height: 24px;
 }
 .user-link:active {
     color: var(--user-link--active);
@@ -224,7 +225,7 @@ body {
     background-image: url("../img/header/icon-bookmark.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    padding-right: 9px;
+    padding-right: 10px;
     opacity: 0.3;
 }
 .user-link--bookmark:hover::before{
@@ -261,12 +262,11 @@ body {
 .main-header--middle {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .slogan {
-    padding-left: 30px;
-    padding-top: 37.5px;
-    padding-bottom: 44.5px;
+    margin-left: 30px;
+    margin-top: 27px;
     font-size: 16px;
     font-style: italic;
     line-height: 23px;
@@ -277,15 +277,18 @@ body {
 .site-contact {
     display: block;
     text-align: center;
+    padding: 0;
+    margin-top: 45px;
+    margin-left: 34px;
 }
 .contact-phone{
     margin: 0;
-    padding: 0;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-    height: 45px;
+    width: 252px;
+    height: 40px;
     font-size: 21px;
     font-weight: 700;
     line-height: 30px;
@@ -312,16 +315,10 @@ body {
     color: var(--text);
 }
 .user-navigation {
+    margin-top: 40px;
     display: flex;
 }
-.login-link {
-    width: 121px;
-    height: 45px;
-}
-.regist-link {
-    width: 150px;
-    height: 45px;
-}
+
 .user-navigation--link{
     padding: 0;
     margin: 5px;
@@ -333,6 +330,14 @@ body {
     color: var(--user-navigation--link);
     text-decoration: none;
     background-color: var(--user-navigation--link---background);
+}
+.login-link {
+    width: 121px;
+    height: 45px;
+}
+.regist-link {
+    width: 150px;
+    height: 45px;
 }
 .user-navigation--link:hover {
     color: var(--user-navigation--link---hover);
@@ -350,6 +355,7 @@ body {
     content: "";
     width: 20px;
     height: 17px;
+    margin-right: 4px;
     background-color: var(--basic-greylight);
     -webkit-mask-image: url("../img/header/icon-login.svg");
         mask-image: url("../img/header/icon-login.svg");
@@ -487,7 +493,7 @@ body {
 
 .main-menu{
     list-style: none;
-    margin: 0;
+    margin-top: 30px;
     padding: 0;
     display: flex;
     width: 940px;
@@ -503,8 +509,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
     color:var(--white);
     text-decoration: none;
 }
@@ -531,7 +536,7 @@ main
 .info-section {
     display: grid;
     grid-template-areas: "info";
-    padding-top: 59px;
+    padding-top: 61px;
     padding-bottom: 59px;
 }
 .info-list{
@@ -563,8 +568,10 @@ ul.info-list::after{
     line-height: 30px;
     text-align: left;
     color: var(--white);
-    margin-left: 23px;
-    margin-top: 20px;
+    margin-left: 22px;
+    margin-top: 21px;
+    margin-bottom: 14px;
+    padding: 0;
 }
 .info {
     width: 300px;
@@ -575,36 +582,43 @@ ul.info-list::after{
 .materials {
     background-color: var(--special-yellow);
     background-image: url("../img/icon/materials.svg");
+    background-position: 213px 31px;
 }
 .tools {
     background-color: var(--blue );
     background-image: url("../img/icon/tools.svg");
+    background-position: 194px 34px;
 }
 .technics {
     background-color: var(--pink);
     background-image: url("../img/icon/technics.svg");
+    background-position: 191px 31px;
 }
 .discount {
     background-color: var(--green);
     background-image: url("../img/icon/discount.svg");
+    background-position: 196px 26px;
 }
 .delivery {
     background-color: var(--special-yellow);
     background-image: url("../img/icon/delivery.svg");
+    background-position: 191px 32px;
 }
 .info-button {
     margin-left: 23px;
-    margin-top: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 135px;
     height: 38px;
-    font-size: 14px;
-    line-height: 18px;
     color: var(--white);
     background-color: var(--info-button);
     border: none;
+    font-family: "Cuprum";
+    font-size: 14px;
+    line-height: 18px;
+
+
 }
 .info-button:hover {
     background-color: var(--info-button--hover);
@@ -639,7 +653,7 @@ ul.info-list::after{
 }
 .info-slider-text {
     margin:0;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-left: 24px;
     text-align: left;
     color: var(--white)
@@ -659,7 +673,7 @@ ul.info-list::after{
     border: none;
 }
 .info-slider-link{
-    margin-top: 93px;
+    margin-top: 97px;
     margin-left: 24px;
 }
 .button:hover{
@@ -684,8 +698,8 @@ ul.info-list::after{
   }
   .slider-controls {
     position: absolute;
-    top: 760px;
-    left: 460px;
+    top: 742px;
+    left: 463px;
     display: flex;
     width: 32px;
     justify-content: space-between;
@@ -710,8 +724,8 @@ ul.info-list::after{
       height: 40px;
       background-image: url("../img/icon-left-slider.svg");
       background-repeat: no-repeat;
-      top: -95px;
-      left: -275px;
+      top: -100px;
+      left: -271px;
   }
   .slider--icon-right {
     position: relative;
@@ -723,16 +737,14 @@ ul.info-list::after{
       height: 40px;
       background-image: url("../img/icon-right-slider.svg");
       background-repeat: no-repeat;
-      top: -95px;
-      left: 275px;
+      top: -100px;
+      left: 261px;
   }
 
 
   .current-button {
     background-color: var(--basic-red);
   }
-
-
 
 .interactive-heading {
     display: flex;
@@ -743,10 +755,11 @@ ul.info-list::after{
     background-color: var(--stile-background);
 }
 .interactive-heading--title {
-    font-size: 30px;
-    line-height: 30px;
-    text-align: left;
     color: var(--text);
+    padding-left: 28px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
 }
 .interactive-heading--link{
     margin:0 14px;
@@ -756,7 +769,7 @@ ul.info-list::after{
 }
 .catalog-list {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 .main-catalog-list {
     display: grid;
@@ -797,8 +810,8 @@ ul.info-list::after{
     color: var(--strike)
 }
 .catalog-link {
-    margin-left: 41px;
-    margin-top: 13.14px;
+    margin-left: 46px;
+    margin-top: 10px;
     font-family: "PT Sans";
     font-size: 17px;
     font-weight: 700;
@@ -955,10 +968,12 @@ ul.info-list::after{
 всё только для глаза
 а не итоговая работа */
 .services-title {
-    padding-top: 64px;
+    padding: 0;
     font-size: 30px;
     line-height: 30px;
     text-align: left;
+    font-weight: 400;
+    margin-top: 66px;
 }
 .services-text {
     padding: 0;
@@ -971,6 +986,7 @@ ul.info-list::after{
 .services-list {
     list-style: none;
     padding-left: 0;
+    margin-top: 70px;
     position: relative;
 }
 .services-list::before{
@@ -985,8 +1001,10 @@ ul.info-list::after{
     pointer-events:none;
 }
 .services-item {
-    width: 240px;
-    height: 61px;
+    padding-left: 22px;
+    padding-top: 14px;
+    width: 218px;
+    height: 47px;
     background-color: var(--services-item--background);
     color: var(--white);
     font-size: 21px;
