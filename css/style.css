@@ -310,7 +310,7 @@ body {
 }
 .contact-adress{
     margin: 0;
-    padding: 0;
+    padding-top: 2px;
     font-size: 14px;
     color: var(--text);
 }
@@ -494,7 +494,7 @@ body {
 .main-menu{
     list-style: none;
     margin-top: 30px;
-    padding: 0;
+    padding: 0 25px;
     display: flex;
     width: 940px;
     height: 60px;
@@ -502,6 +502,7 @@ body {
     align-items: center;
     background-color:var(--text);
     box-shadow: inset 0px -5px 0px var(--site-navigation--shadow);
+    box-sizing: border-box;
 
 }
 .main-menu--link{
@@ -509,7 +510,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60px;
-    padding: 0 32px;
+    padding: 0 25px;
     color:var(--white);
     text-decoration: none;
 }
@@ -609,8 +610,9 @@ ul.info-list::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 135px;
-    height: 38px;
+    min-width: 135px;
+    min-height: 38px;
+    padding: 10px 24px;
     color: var(--white);
     background-color: var(--info-button);
     border: none;
@@ -662,8 +664,7 @@ ul.info-list::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 192px;
-    height: 38px;
+    padding: 10px 24px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -675,6 +676,8 @@ ul.info-list::after{
 .info-slider-link{
     margin-top: 97px;
     margin-left: 24px;
+    display: inline-flex;
+    min-width: 144px;
 }
 .button:hover{
     background-color: var(--button--hover);
@@ -714,31 +717,35 @@ ul.info-list::after{
     border-radius: 50%;
     cursor: pointer;
   }
-  .slider--icon-left {
+.slider--icon{
     position: relative;
-  }
-  .slider--icon-left::before {
-      content: "";
+}
+  .slider--icon-left{
       position: absolute;
+      display: block;
       width: 22px;
       height: 40px;
       background-image: url("../img/icon-left-slider.svg");
       background-repeat: no-repeat;
-      top: -100px;
-      left: -271px;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      top: -144px;
+      left: 24px;
+
   }
-  .slider--icon-right {
-    position: relative;
-  }
-  .slider--icon-right::before {
-      content: "";
+  .slider--icon-right{
       position: absolute;
+      display: block;
       width: 22px;
       height: 40px;
       background-image: url("../img/icon-right-slider.svg");
       background-repeat: no-repeat;
-      top: -100px;
-      left: 261px;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      top: -144px;
+      left: 578px;
   }
 
 
@@ -763,6 +770,7 @@ ul.info-list::after{
 }
 .interactive-heading--link{
     margin:0 14px;
+    min-width: 144px;
 }
 .catalog {
     margin-bottom: 70px;
@@ -780,18 +788,29 @@ ul.info-list::after{
 .catalog-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 220px;
-    height: 318px;
+    box-sizing: border-box;
+    max-width: 220px;
+    min-height: 318px;
     border: 1px solid var(--catalog-item--border);
+    padding:0 10px 19px;
 }
 .catalog-item:hover{
     box-shadow: 0px 4px 20px var(--manufact-img--box-shadow)
 }
+/*
+.catalog-text--box{
+    padding: 0px 10px;
+    max-width: 220px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 42px;
 
+}*/
 .catalog-subtitle {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 8px;
+    padding: 0 10px;
     font-family: "PT Sans";
     font-size: 18px;
     font-weight: 700;
@@ -800,23 +819,27 @@ ul.info-list::after{
 }
 
 .catalog-strike {
-    margin-top: 8px;
-    padding: 0;
+    margin: 0 0 14px;
+    padding: 0 10px;
     font-family: "PT Sans";
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
+
     text-align: center;
     color: var(--strike)
 }
 .catalog-link {
-    margin-left: 46px;
-    margin-top: 10px;
-    font-family: "PT Sans";
-    font-size: 17px;
-    font-weight: 700;
+    display: inline-flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+    margin-left: 36px;
+    margin-top: auto;
+    padding: 11px 20px;
     width: 141px;
-    height: 38px;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 700;
     border-radius: 3px;
     -webkit-mask-image: url("../img/red-button.svg");
         mask-image: url("../img/red-button.svg");
@@ -830,7 +853,9 @@ ul.info-list::after{
 
 
 .catalog-image--box {
+    margin: 0 0 10px;
     display: grid;
+    place-content: center;
     transform-style: preserve-3d;
     transition: transform .7s;
     transition-property: transform;
@@ -860,8 +885,8 @@ ul.info-list::after{
     -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     transform: rotateY(180deg);
-    width: 184px;
-    height: 164px;
+    width: 218px;
+    height: 170px;
     grid-row: 1/2;
     grid-column: 1/2;
 }
@@ -878,7 +903,7 @@ ul.info-list::after{
 
 }
 .catalog-buy {
-    margin-top: 38px;
+    margin: 38px auto 0;
     color: var(--white);
     background-color: var(--catalog-buy--background);
     box-shadow: inset 0px -3px 0px var(--catalog-buy--shadow);
@@ -906,7 +931,7 @@ ul.info-list::after{
     background-color: var(--catalog-buy--background---active);
 }
 .catalog-bookmarks {
-    margin-top: 10px;
+    margin: 10px auto 0;
     color: var(--text);
     border: 3px solid var(--catalog-bookmarks);
     box-sizing: border-box;
@@ -950,17 +975,20 @@ ul.info-list::after{
 
 .services {
     background-color: var(--basic-background);
+    padding-bottom: 82px;
 }
 .services-box {
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 240px 1fr;
     justify-self: end;
 }
 .services-block {
     grid-column: 1 / -1;
 }
 .services-slider {
-    justify-self: end;
+    padding-top: 39px;
+    padding-left: 80px;
+
 }
 
 /* с этим слайдером вообще попозже разберусь
@@ -1036,12 +1064,18 @@ ul.info-list::after{
     line-height: 24px;
     text-align: left;
 }
-.services-delivery {
+.services-delivery{
+    position: relative;
+}
+.services-delivery::before {
+    content: "";
+    position: absolute;
     background-image: url("../img/contacts/delivery.png");
     background-repeat: no-repeat;
-    background-position: end;
-    width: 465px;
-    height: 285px;
+    width: 468px;
+    height: 261px;
+    right: -1px;
+    top: 20px;
 }
 
 .services-guarantee {
@@ -1378,15 +1412,15 @@ catalog
     color: var(--black);
     opacity: 0.3;
 }
-.filters-link:hover {
-    opacity: 1;
-    text-decoration-style: solid;
-}
+.filters-link:hover,
 .filters-link:focus {
     opacity: 1;
     text-decoration-style: solid;
 }
+
+.filters-link.active,
 .filters-link:active {
+    opacity: 1;
     text-decoration: none;
     color:  var(--basic-red);
 }
@@ -1395,53 +1429,44 @@ catalog
     position: relative;
     display: block;
 }
-.filters-icon-up::before {
+.filters-icon-up::before,
+.filters-icon-down::before {
     content: "";
     width: 11px;
     height: 10px;
-    background-image: url("../img/filtr/icon-up.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 8px;
     filter: saturate(0) invert(100%);
     opacity: 0.6;
 }
-.filters-icon-up:hover:before{
-    opacity: 1;
-    filter:  brightness(0);
-}
-.filters-icon-up:active:before{
-    opacity: 1;
-    filter: none;
-}
-.filters-icon-up:focus:before{
-    opacity: 1;
-    filter: none;
+.filters-icon-up::before{
+    background-image: url("../img/filtr/icon-up.svg");
+    top: 8px;
 }
 .filters-icon-down::before{
-    content: "";
-    width: 11px;
-    height: 10px;
     background-image: url("../img/filtr/icon-down.svg");
-    background-repeat: no-repeat;
-    position: absolute;
     top: 8px;
     right: -40px;
-    filter: saturate(0) invert(100%);
-    opacity: 0.6;
 }
+.filters-icon-up:hover:before,
 .filters-icon-down:hover:before{
     opacity: 1;
     filter:  brightness(0);
 }
-.filters-icon-down:active:before{
+.filters-icon-up:focus:before,
+.filters-icon-down:focus:before{
+    opacity: 1;
+    filter:  brightness(0);
+}
+.filters-icon-up.active:before,
+.filters-icon-down.active:before,
+.filters-icon-up:active:before,
+.filters-icon-down:active:before
+{
     opacity: 1;
     filter: none;
 }
-.filters-icon-down:focus:before{
-    opacity: 1;
-    filter:  none;
-}
+
 .filter-label {
     font-family: "PT Sans";
     font-size: 15px;
@@ -1621,11 +1646,12 @@ catalog
   }
   .modal-close {
     position: absolute;
+    z-index: 1;
     width: 22px;
     height: 22px;
     top: 11px;
     right: 9px;
-    background-color: transparent;;
+    background-color: transparent;
     border: 0;
     cursor: pointer;
 }
@@ -1907,9 +1933,10 @@ catalog
   }
 
   .price-controls input {
-    width: 47px;
+    width: 71px;
     height: 18px;
     padding: 10px 24px;
+    padding-right: 0;
     margin-right: 30px;
     text-align: center;
     border: none;
