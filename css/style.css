@@ -973,6 +973,9 @@ ul.info-list::after{
     box-shadow: 0px 4px 20px var(--manufact-img--box-shadow);
 }
 
+
+/* Сервисы */
+
 .services {
     background-color: var(--basic-background);
     padding-bottom: 82px;
@@ -990,11 +993,6 @@ ul.info-list::after{
     padding-left: 80px;
 
 }
-
-/* с этим слайдером вообще попозже разберусь
-пока не разберусь как делать сдайдер
-всё только для глаза
-а не итоговая работа */
 .services-title {
     padding: 0;
     font-size: 30px;
@@ -1024,7 +1022,7 @@ ul.info-list::after{
     height: 279px;
     background-image: url("../img/slider-shadow.png");
     background-repeat: no-repeat;
-    right: -60px;
+    right: 0px;
     top:-50px;
     pointer-events:none;
 }
@@ -1057,6 +1055,7 @@ ul.info-list::after{
     line-height: 30px;
     text-align: left;
     color: var(--text);
+    font-weight: 400;
 }
 .services-text {
     font-family: "PT Sans";
@@ -1064,8 +1063,17 @@ ul.info-list::after{
     line-height: 24px;
     text-align: left;
 }
-.services-delivery{
+
+/* слайды*/
+
+.services-delivery,
+.services-guarantee,
+.services-credit{
     position: relative;
+}
+.services-guarantee,
+.services-credit{
+    display: none;
 }
 .services-delivery::before {
     content: "";
@@ -1074,45 +1082,64 @@ ul.info-list::after{
     background-repeat: no-repeat;
     width: 468px;
     height: 261px;
-    right: -1px;
+    right: 0px;
     top: 20px;
 }
 
-.services-guarantee {
+
+.services-guarantee--subtitle{
+    margin-bottom: 22.5px;
+}
+.services-guarantee::before {
+    content: "";
+    position: absolute;
     background-image: url("../img/contacts/guarantee.png");
     background-repeat: no-repeat;
-    background-position: center;
-    width: 465px;
-    height: 285px;
+    width: 389px;
+    height: 283px;
+    right: -8px;
+    top: -2px
 }
-.services-credit {
+
+
+.services-credit--link {
+    margin-top: 24px;
+    display: inline-flex;
+    min-width: 147px;
+}
+.services-credit::before {
+    content: "";
+    position: absolute;
     background-image: url("../img/contacts/credit.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 465px;
     height: 285px;
+    right: -10px;
+    top: -2px;
 }
 
-
+/* Компания Техномарт */
 
 .details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 70px auto;
+    margin: 48px auto 70px;
 }
 
 .details-contacts {
     justify-self: end;
 }
 .details-tittle {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
     padding: 0;
     font-size: 30px;
     line-height: 30px;
     text-align: left;
+    font-weight: 400;
 }
 .details-text-down{
-    margin-top: 20px;
+    margin: 25px 0 3px;
 }
 .details-text {
     padding: 0;
@@ -1123,29 +1150,28 @@ ul.info-list::after{
 }
 .details-list {
     margin: 0;
-    padding-left: 30px;
+    padding-left: 32px;
     list-style-image: url("../img/details-list.svg");
-
 }
 .details-items {
     margin-bottom: 12px;
     text-align: left;
+    padding-left: 5px;
 }
 .details-map {
     margin-top: 32px;
 }
 .details-about-link {
-    width: 220px;
-    margin-top: 20px;
-    padding: 0;
+    min-width: 172px;
+    margin-top: 7px;
+    display: inline-flex;
 }
 .details-contacts-link {
-   width: 300px;
-   margin-top: 25px;
-   padding: 0;
+   min-width: 100px;
+   margin-top: 5px;
 }
 
-
+/* ПОДВАЛ */
 
 .main-footer{
     background-color: var(--header-top);
@@ -1156,6 +1182,9 @@ ul.info-list::after{
 .logo-footer {
     height: 68px;
 }
+.logo-img--footer{
+    padding-bottom: 5px;
+}
 .footer-top--container {
     display: flex;
     justify-content: space-between;
@@ -1163,8 +1192,8 @@ ul.info-list::after{
 .site-contact--footer {
     width: 339px;
     height: 49px;
-    margin-top: 22px;
-    margin-bottom: 54px;
+    margin-top: 12px;
+    margin-bottom: 70px;
 }
 .footer-navigation-up {
     width: 546px;
@@ -1172,7 +1201,7 @@ ul.info-list::after{
 }
 .footer-navigation-down {
     width: 524px;
-    margin-top: 34px;
+    margin-top: 18px;
 }
 .footer-navigation {
     list-style: none;
@@ -1186,12 +1215,11 @@ ul.info-list::after{
 .footer-navigation--link:active {
     opacity: 0.5;
 }
-.footer-navigation--link:hover {
-    text-decoration: underline;
-}
+.footer-navigation--link:hover,
 .footer-navigation--link:focus {
     text-decoration: underline;
 }
+
 .up{
     color: var(--basic-background)
 }
@@ -1215,23 +1243,27 @@ ul.info-list::after{
 }
 .responsiveness{
     display: flex;
+    margin-left: 1px;
 }
 .responsiveness-developed{
     margin-left: 51px;
-    margin-right: 20px;;
+    margin-right: 15px;
 
+}
+.content{
+    margin-right: 7px;
 }
 .content--text {
     font-size: 16px;
     text-align: left;
     color: var(--white);
 }
-
 .socials-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
     width: 134px;
+    margin-top: 18px;
 }
 .socials-link {
     background-color: var(--socials-link);
@@ -1242,23 +1274,18 @@ ul.info-list::after{
     height: 44px;
     border-radius: 50%;
 }
-.socials-link:hover {
-    background-color: var(--socials-link--act-hov);
-}
-.socials-link:focus {
-    background-color: var(--socials-link--act-hov);
-}
+.socials-link:hover,
+.socials-link:focus,
 .socials-link:active {
     background-color: var(--socials-link--act-hov);
 }
+
 .responsiveness-link {
     display: block;
     color: var(--footer-nav-down);
     text-decoration: none;
 }
-.responsiveness-link:hover {
-    text-decoration: underline;
-}
+.responsiveness-link:hover,
 .responsiveness-link:focus {
     text-decoration: underline;
 }
