@@ -28,7 +28,7 @@
                     </form>
                     <ul class="user-list">
                         <li class="user-item"><a class="user-link user-link--bookmark" href="#">Закладки: 0</a></li>
-                        <li class="user-item"><a class="user-link user-link--basket" href="#">Корзина: 0</a></li>
+                        <li class="user-item"><a class="user-link user-link--basket" href="#">Корзина: 10</a></li>
                         <li class="user-item"><a class="user-link user-link--checkout" href="#">Оформить заказ</a></li>
                     </ul>
                 </div>
@@ -45,11 +45,11 @@
                     </p>
                 </div>
 
-                <div class="site-contact">
+                <div class="site-contact site-contact-catalog">
                     <a class="contact-phone contact-phone--icon" href="tel:+7800558628"
                         >+7 800 555-86-28</a
                     >
-                    <p class="contact-adress">г. Санкт-Петербург,наб.Реки Карповки, 5 лит П</p>
+                    <p class="contact-adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
                 </div>
 
                 <div class="box--user-navigation">
@@ -78,345 +78,345 @@
 
         <main class="main-container">
             <div class="page-catalog container">
-            <ol class="container-list">
-                <li>
-                    <a class="icon-home" href="index.html"></a>
-                </li>
-                <li>
-                    <a class="container-link icon-next" href="#">КАТАЛОГ</a>
-                </li>
-                <li>
-                    <a class="container-link icon-next" href="#">ИНСТРУМЕНТ</a>
-                </li>
-                <li>
-                    <a class="container-link icon-next">ПЕРФОРАТОРЫ</a>
-                </li>
-            </ol>
+                <ol class="container-list">
+                    <li>
+                        <a class="icon-home" href="index.html"></a>
+                    </li>
+                    <li>
+                        <a class="container-link icon-next" href="#">КАТАЛОГ</a>
+                    </li>
+                    <li>
+                        <a class="container-link icon-next" href="#">ИНСТРУМЕНТ</a>
+                    </li>
+                    <li>
+                        <a class="container-link icon-next">ПЕРФОРАТОРЫ</a>
+                    </li>
+                </ol>
 
-            <h1 class="catalog-title page--catalog-title">ПЕРФОРАТОРЫ</h1>
+                <h1 class="catalog-title page--catalog-title">ПЕРФОРАТОРЫ</h1>
 
-            <div class="filters-sorting">
-                <h2 class="filters-title">СОРТИРОВКА:</h2>
-                <ul class="filters-sorting--list">
-                    <li class="filters-item">
-                        <a class="filters-link active" href="#">ПО ЦЕНЕ</a>
-                    </li>
-                    <li class="filters-item">
-                        <a class="filters-link" href="#">ПО ТИПУ</a>
-                    </li>
-                    <li class="filters-item">
-                        <a class="filters-link" href="#">ПО ФУНКЦИОНАЛУ</a>
-                    </li>
-                    <li class="filters-item">
-                        <a class="filers-icon filters-icon-up active" href="#"> </a>
-                        <a class="filers-icon filters-icon-down" href="#"></a>
-                    </li>
-                </ul>
-             </div>
+                <div class="filters-sorting">
+                    <h2 class="filters-title">СОРТИРОВКА:</h2>
+                    <ul class="filters-sorting--list">
+                        <li class="filters-item">
+                            <a class="filters-link active" href="#">ПО ЦЕНЕ</a>
+                        </li>
+                        <li class="filters-item">
+                            <a class="filters-link" href="#">ПО ТИПУ</a>
+                        </li>
+                        <li class="filters-item">
+                            <a class="filters-link" href="#">ПО ФУНКЦИОНАЛУ</a>
+                        </li>
+                        <li class="filters-item">
+                            <a class="filers-icon filters-icon-up active" href="#"> </a>
+                            <a class="filers-icon filters-icon-down" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
 
-            <section class="filters">
-                <h2 class="filters-title filters-title--filter">ФИЛЬТР:</h2>
-                <form method="get" action="https://echo.htmlacademy.ru/" target="_blank">
-                    <fieldset class="filters-fieldset rt">
-                        <legend class="filter-legeng">ЦЕНА</legend>
-                        <div class="range-filter">
-                            <div class="range-controls">
-                                <div class="scale">
-                                    <div class="bar" style="
-                                        width: 30%; margin-left: 20%">
+                <section class="filters">
+                    <h2 class="filters-title filters-title--filter">ФИЛЬТР:</h2>
+                    <form method="get" action="https://echo.htmlacademy.ru/" target="_blank">
+                        <fieldset class="filters-fieldset rt">
+                            <legend class="filter-legeng">ЦЕНА</legend>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar" style="
+                                            width: 30%; margin-left: 20%">
+                                        </div>
+                                    </div>
+                                    <div class="toggle toggle-min" tabindex="0" style="
+                                    left: 20%">
+                                    </div>
+                                    <div class="toggle toggle-max" tabindex="0" style="
+                                    left: 50%">
                                     </div>
                                 </div>
-                                <div class="toggle toggle-min" tabindex="0" style="
-                                left: 20%">
-                                </div>
-                                <div class="toggle toggle-max" tabindex="0" style="
-                                left: 50%">
+                                <div class="price-controls">
+                                <label class="min-price">
+                                    <input type="number" name="min-price" value="0">
+                                </label>
+                                <label class="max-price">
+                                    <input type="number" name="max-price" value="30000">
+                                </label>
                                 </div>
                             </div>
-                            <div class="price-controls">
-                              <label class="min-price">
-                                <input type="number" name="min-price" value="0">
-                              </label>
-                              <label class="max-price">
-                                 <input type="number" name="max-price" value="30000">
-                              </label>
-                            </div>
-                          </div>
-                    </fieldset>
-                    <fieldset class="filters-fieldset rt">
-                        <legend class="filter-legeng">ПРОИЗВОДИТЕЛИ:</legend>
-                        <ul class="filters-list">
-                            <li class="filter-option filter-checkbox">
-                                <input class="filter-input-checkbox filter-input visually-hidden"
-                                    type="checkbox"
-                                    name="bosh"
-                                    id="filter-bosh"
-                                    checked
-                                />
-                                <label class="filter-label" for="filter-bosh">BOSCH</label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
-                                <input class="filter-input-checkbox filter-input visually-hidden"
-                                    type="checkbox"
-                                    name="interskol"
-                                    id="filter-interskol"
-                                />
-                                <label class="filter-label" for="filter-interskol">ИНТЕРСКОЛ</label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
-                                <input class="filter-input-checkbox filter-input visually-hidden"
-                                    type="checkbox"
-                                    name="makita"
-                                    id="filter-makita"
-                                    checked
-                                />
-                                <label class="filter-label" for="filter-makita">MAKITA</label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
-                                <input class="filter-input-checkbox filter-input visually-hidden"
-                                    type="checkbox"
-                                    name="dewalt"
-                                    id="filter-dewalt"
-                                />
-                                <label class="filter-label" for="filter-dewalt">DEWALT</label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
-                                <input class="filter-input-checkbox filter-input visually-hidden"
-                                    type="checkbox"
-                                    name="hitachi"
-                                    id="filter-hitachi"
-                                />
-                                <label class="filter-label" for="filter-hitachi">HITACHI</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset class="filters-fieldset">
-                        <legend class="filter-legeng">ПИТАНИЕ:</legend>
-                        <ul class="filters-list">
-                            <li class="filter-option filter-radio">
-                                <input class="filter-input-radio filter-input visually-hidden"
-                                    type="radio"
-                                    name="power"
-                                    value="battery"
-                                    id="filter-battery"
-                                    checked
-                                />
-                                <label class="filter-label" for="filter-battery">СЕТЕВЫЕ</label>
-                            </li>
-                            <li class="filter-option filter-radio">
-                                <input class="filter-input-radio filter-input visually-hidden"
-                                    type="radio"
-                                    name="power"
-                                    value="supply"
-                                    id="filter-supply"
-                                />
-                                <label class="filter-label" for="filter-supply"
-                                    >АККУМУЛЯТОРНЫЕ</label
-                                >
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <button class="filter-button" type="submit">ПОКАЗАТЬ</button>
-                </form>
-            </section>
+                        </fieldset>
+                        <fieldset class="filters-fieldset rt">
+                            <legend class="filter-legeng">ПРОИЗВОДИТЕЛИ:</legend>
+                            <ul class="filters-list">
+                                <li class="filter-option filter-checkbox">
+                                    <input class="filter-input-checkbox filter-input visually-hidden"
+                                        type="checkbox"
+                                        name="bosh"
+                                        id="filter-bosh"
+                                        checked
+                                    />
+                                    <label class="filter-label" for="filter-bosh">BOSCH</label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <input class="filter-input-checkbox filter-input visually-hidden"
+                                        type="checkbox"
+                                        name="interskol"
+                                        id="filter-interskol"
+                                    />
+                                    <label class="filter-label" for="filter-interskol">ИНТЕРСКОЛ</label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <input class="filter-input-checkbox filter-input visually-hidden"
+                                        type="checkbox"
+                                        name="makita"
+                                        id="filter-makita"
+                                        checked
+                                    />
+                                    <label class="filter-label" for="filter-makita">MAKITA</label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <input class="filter-input-checkbox filter-input visually-hidden"
+                                        type="checkbox"
+                                        name="dewalt"
+                                        id="filter-dewalt"
+                                    />
+                                    <label class="filter-label" for="filter-dewalt">DEWALT</label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <input class="filter-input-checkbox filter-input visually-hidden"
+                                        type="checkbox"
+                                        name="hitachi"
+                                        id="filter-hitachi"
+                                    />
+                                    <label class="filter-label" for="filter-hitachi">HITACHI</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="filters-fieldset">
+                            <legend class="filter-legeng">ПИТАНИЕ:</legend>
+                            <ul class="filters-list">
+                                <li class="filter-option filter-radio">
+                                    <input class="filter-input-radio filter-input visually-hidden"
+                                        type="radio"
+                                        name="power"
+                                        value="battery"
+                                        id="filter-battery"
+                                        checked
+                                    />
+                                    <label class="filter-label" for="filter-battery">СЕТЕВЫЕ</label>
+                                </li>
+                                <li class="filter-option filter-radio">
+                                    <input class="filter-input-radio filter-input visually-hidden"
+                                        type="radio"
+                                        name="power"
+                                        value="supply"
+                                        id="filter-supply"
+                                    />
+                                    <label class="filter-label" for="filter-supply"
+                                        >АККУМУЛЯТОРНЫЕ</label
+                                    >
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button class="filter-button" type="submit">ПОКАЗАТЬ</button>
+                    </form>
+                </section>
 
-            <section class="catalog page--catalog-section">
-                <h2 class="visually-hidden">ТОВАРЫ:</h2>
-                <ul class="catalog-list page--catalog-list">
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_1.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                <section class="catalog page--catalog-section">
+                    <h2 class="visually-hidden">ТОВАРЫ:</h2>
+                    <ul class="catalog-list page--catalog-list">
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_1.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 6000
-                        </h3>
-                        <s class="catalog-strike">30500 <span>&#8381;</span></s>
-                        <a class="catalog-link button" href="#">25500 &#8381;</a>
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_1.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 6000
+                            </h3>
+                            <s class="catalog-strike">30500 <span>&#8381;</span></s>
+                            <a class="catalog-link button" href="#">25500 &#8381;</a>
+                        </li>
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_1.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 6000
-                        </h3>
-                        <s class="catalog-strike">30500 <span>&#8381;</span></s>
-                        <a class="catalog-link button" href="#">25500 &#8381;</a>
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_1.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 6000
+                            </h3>
+                            <s class="catalog-strike">30500 <span>&#8381;</span></s>
+                            <a class="catalog-link button" href="#">25500 &#8381;</a>
+                        </li>
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_1.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 6000
-                        </h3>
-                        <s class="catalog-strike">30500 <span>&#8381;</span></s>
-                        <a class="catalog-link button" href="#">25500 &#8381;</a>
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_2.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 6000
+                            </h3>
+                            <s class="catalog-strike">30500 <span>&#8381;</span></s>
+                            <a class="catalog-link button" href="#">25500 &#8381;</a>
+                        </li>
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_2.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 3000
-                        </h3>
-                        <s class="catalog-strike">22500 <span>&#8381;</span></s>
-                        <a class="catalog-link button" href="#">15500 &#8381;</a>
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_1.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 3000
+                            </h3>
+                            <s class="catalog-strike">22500 <span>&#8381;</span></s>
+                            <a class="catalog-link button" href="#">15500 &#8381;</a>
+                        </li>
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_1.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 6000
-                        </h3>
-                        <s class="catalog-strike">30500 <span>&#8381;</span></s>
-                        <a class="catalog-link button" href="#">25500 &#8381;</a>
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_2.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
-                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 2000
-                        </h3>
-                        <a class="catalog-link button" href="#">12500 &#8381;</a>
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_2.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 6000
+                            </h3>
+                            <s class="catalog-strike">30500 <span>&#8381;</span></s>
+                            <a class="catalog-link button" href="#">25500 &#8381;</a>
+                        </li>
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_2.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 3000
-                        </h3>
-                        <s class="catalog-strike">22500 <span>&#8381;</span></s>
-                        <a class="catalog-link button" href="#">15500 &#8381;</a>
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_2.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 2000
+                            </h3>
+                            <a class="catalog-link button" href="#">12500 &#8381;</a>
+                        </li>
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_2.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 6000
-                        </h3>
-                        <s class="catalog-strike">30500 <span>&#8381;</span></s>
-                        <a class="catalog-link button" href="#">25500 &#8381;</a>
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-image--box">
-                            <img class="catalog-img"
-                                src="img/popular-goods/snippet_1.jpg"
-                                width="218"
-                                height="170"
-                                alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
-                            />
-                            <div class="catalog-img--back">
-                                <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
-                                <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 3000
+                            </h3>
+                            <s class="catalog-strike">22500 <span>&#8381;</span></s>
+                            <a class="catalog-link button" href="#">15500 &#8381;</a>
+                        </li>
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_2.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 class="catalog-subtitle">
-                            Перфоратор BOSCH<br />
-                            BFG 2000
-                        </h3>
-                        <a class="catalog-link button" href="#">12500 &#8381;</a>
-                    </li>
-                </ul>
-                <ul class="catalog-page--list">
-                    <li>
-                        <a class="catalog-page-link page-number">1</a>
-                    </li>
-                    <li>
-                        <a class="catalog-page-link page-number" href="#">2</a>
-                    </li>
-                    <li>
-                        <a class="catalog-page-link page-number" href="#">3</a>
-                    </li>
-                    <li>
-                        <a class="catalog-page-link page-next" href="#">СЛЕДУЮЩАЯ</a>
-                    </li>
-                </ul>
-            </section>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 6000
+                            </h3>
+                            <s class="catalog-strike">30500 <span>&#8381;</span></s>
+                            <a class="catalog-link button" href="#">25500 &#8381;</a>
+                        </li>
+                        <li class="catalog-item">
+                            <div class="catalog-image--box">
+                                <img class="catalog-img"
+                                    src="img/popular-goods/snippet_1.jpg"
+                                    width="218"
+                                    height="170"
+                                    alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
+                                />
+                                <div class="catalog-img--back">
+                                    <a class="catalog-image--link catalog-buy" href="#">КУПИТЬ</a>
+                                    <a class="catalog-image--link catalog-bookmarks" href="#">В ЗАКЛАДКИ</a>
+                                </div>
+                            </div>
+                            <h3 class="catalog-subtitle">
+                                Перфоратор BOSCH<br />
+                                BFG 2000
+                            </h3>
+                            <a class="catalog-link button" href="#">12500 &#8381;</a>
+                        </li>
+                    </ul>
+                    <ul class="catalog-page--list">
+                        <li>
+                            <a class="catalog-page-link page-number">1</a>
+                        </li>
+                        <li>
+                            <a class="catalog-page-link page-number" href="#">2</a>
+                        </li>
+                        <li>
+                            <a class="catalog-page-link page-number" href="#">3</a>
+                        </li>
+                        <li>
+                            <a class="catalog-page-link page-next" href="#">СЛЕДУЮЩАЯ</a>
+                        </li>
+                    </ul>
+                </section>
             </div>
             <div class="tool-information">
                 <div class="container">
