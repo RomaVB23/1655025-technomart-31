@@ -1311,7 +1311,7 @@ ul.info-list::after{
 catalog
 */
 
-/* хлебные крошки */
+
 .page-catalog {
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -1328,11 +1328,12 @@ catalog
     padding-left: 29px;
 }
 
-
 .filters-sorting {
+    margin-top: 20px;
+    margin-left: 20px;
     grid-column: 2 / -1;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 700px;
     height: 38px;
@@ -1346,7 +1347,10 @@ catalog
     width: 700px;
     grid-template-columns: 220px 220px 220px;
     gap: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
+/* хлебные крошки */
 .container-list {
     list-style: none;
     margin-top: 19px;
@@ -1398,6 +1402,8 @@ catalog
     text-decoration: none;
     color: var(--black);
 }
+
+
 .catalog-title {
     font-size: 30px;
     line-height: 30px;
@@ -1407,44 +1413,30 @@ catalog
     font-weight: 400;
 }
 
+
+.filters-sorting-title {
+    padding-left: 20px;
+    margin-right: 140px;
+}
+
 .filters-sorting--list {
+    margin-bottom: 20px;
     padding-left: 0;
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    width: 443px;
+    justify-content: flex-start;
+    width: 458px;
+
+
 }
-.filters-list {
-    padding-left: 0;
-    list-style: none;
-    margin-top: 18px;
+.filters-item-price {
+    margin-right: 70px;
 }
-.filters-fieldset {
-    border: none;
-    margin-top: 25px;
+.filters-item-type {
+    margin-right: 65px;
 }
-.filters-title--filter {
-    margin: 0;
-    padding-left: 18px;
-    display: flex;
-    align-items: center;
-    width: 202px;
-    height: 38px;
-    background-color: var(--filters-item--background);
-}
-.filter-legeng {
-    font-family: "PT Sans";
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: left;
-}
-.filters-title {
-    font-family: "PT Sans";
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    text-align: left;
+.filters-item-functional{
+    margin-right: 46px;
 }
 .filters-link {
     font-family: "PT Sans";
@@ -1473,6 +1465,7 @@ catalog
     position: relative;
     display: block;
 }
+
 .filters-icon-up::before,
 .filters-icon-down::before {
     content: "";
@@ -1486,11 +1479,12 @@ catalog
 .filters-icon-up::before{
     background-image: url("../img/filtr/icon-up.svg");
     top: 8px;
+    left: 1px;
 }
 .filters-icon-down::before{
     background-image: url("../img/filtr/icon-down.svg");
     top: 8px;
-    right: -40px;
+    right: -44px;
 }
 .filters-icon-up:hover:before,
 .filters-icon-down:hover:before{
@@ -1510,6 +1504,43 @@ catalog
     opacity: 1;
     filter: none;
 }
+
+
+
+
+.filters-list {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 18px;
+}
+.filters-fieldset {
+    border: none;
+    margin-top: 25px;
+}
+.filters-title--filter {
+    margin-top: 20px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+    width: 202px;
+    height: 38px;
+    background-color: var(--filters-item--background);
+}
+.filter-legeng {
+    font-family: "PT Sans";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+.filters-title {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
 
 .filter-label {
     font-family: "PT Sans";
@@ -1545,7 +1576,7 @@ catalog
     user-select: none;
 }
 
-  .filter-input-checkbox + .filter-label::before {
+.filter-input-checkbox + .filter-label::before {
     content: "";
     width: 23px;
     height: 23px;
@@ -1556,10 +1587,10 @@ catalog
     left: -42px;
     top: -1px;
 }
-  .filter-input-checkbox + .filter-label:hover:before {
+.filter-input-checkbox + .filter-label:hover:before {
     opacity: 1;
 }
-  .filter-input-checkbox:checked + .filter-label::before {
+.filter-input-checkbox:checked + .filter-label::before {
     content: "";
     width: 26px;
     height: 25px;
@@ -1570,11 +1601,11 @@ catalog
     left: -42px;
     top: -1px;
   }
-  .filter-input-checkbox:checked + .filter-label:hover::before{
+.filter-input-checkbox:checked + .filter-label:hover::before{
     opacity: 1;
-  }
+}
 
-  .filter-input-radio + .filter-label::before {
+.filter-input-radio + .filter-label::before {
     content: "";
     position: absolute;
     left: -42px;
@@ -1583,11 +1614,11 @@ catalog
     height: 16px;
     border: 2px solid var(--basic-greylight);
     border-radius: 50%;
-  }
-  .filter-input-radio + .filter-label:hover:before{
+}
+.filter-input-radio + .filter-label:hover:before{
     border: 2px solid var(--input--hover);
-  }
-  .filter-input-radio:checked + .filter-label::after {
+}
+.filter-input-radio:checked + .filter-label::after {
     content: "";
     position: absolute;
     top: 5px;
@@ -1596,17 +1627,17 @@ catalog
     height: 8px;
     background-color: var(--basic-greylight);
     border-radius: 50%;
-  }
-  .filter-input-radio + .filter-label:hover::after{
+}
+.filter-input-radio + .filter-label:hover::after{
     background-color: var(--input--hover);
-  }
+}
 
-  .filter-input-checkbox:focus + .filter-label{
+.filter-input-checkbox:focus + .filter-label{
     color: var(--basic-red);
-  }
-  .filter-input-radio:focus + .filter-label{
+}
+.filter-input-radio:focus + .filter-label{
     color: var(--basic-red);
-  }
+}
 
 
 
