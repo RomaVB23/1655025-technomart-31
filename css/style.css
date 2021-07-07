@@ -195,10 +195,10 @@ body {
     align-items: center;
     width: 149px;
     height: 42px;
-
+    padding: 9px 10px;
+    box-sizing: border-box;
     color: var(--user-link);
     text-decoration: none;
-    padding-right: 1px;
     font-size: 18px;
     line-height: 24px;
 }
@@ -208,15 +208,15 @@ body {
 .user-link--checkout{
     background-color: var(--user-link--checkout);
 }
-.user-link--checkout:hover {
-    background-color: var(--user-link--checkout---hover);
-}
+.user-link--checkout:hover,
 .user-link--checkout:focus {
     background-color: var(--user-link--checkout---hover);
 }
 
+
 .user-link--bookmark{
     position: relative;
+    padding: 9px 11px 9px 6px;
 }
 .user-link--bookmark::before{
     content: "";
@@ -228,9 +228,7 @@ body {
     padding-right: 10px;
     opacity: 0.3;
 }
-.user-link--bookmark:hover::before{
-    opacity: 1;
-}
+.user-link--bookmark:hover::before,
 .user-link--bookmark:focus::before{
     opacity: 1;
 }
@@ -250,12 +248,11 @@ body {
     padding-right: 8px;
     opacity: 0.3;
 }
-.user-link--basket:hover::before{
-    opacity: 1;
-}
+.user-link--basket:hover::before,
 .user-link--basket:focus::before{
     opacity: 1;
 }
+
 .user-link--basket:active::before {
     opacity: 0.3;
 }
@@ -266,7 +263,7 @@ body {
 }
 .slogan {
     margin-left: 30px;
-    margin-top: 27px;
+    padding-top: 27px;
     font-size: 16px;
     font-style: italic;
     line-height: 23px;
@@ -279,7 +276,7 @@ body {
     text-align: center;
     padding: 0;
     margin-top: 45px;
-    margin-left: 34px;
+    margin-left: 25px;
 }
 .contact-phone{
     margin: 0;
@@ -310,18 +307,18 @@ body {
 }
 .contact-adress{
     margin: 0;
-    padding-top: 2px;
+    padding-top: 3px;
     font-size: 14px;
     color: var(--text);
 }
 .user-navigation {
-    margin-top: 40px;
+    margin-top: 45px;
     display: flex;
 }
 
 .user-navigation--link{
     padding: 0;
-    margin: 5px;
+    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,32 +327,33 @@ body {
     color: var(--user-navigation--link);
     text-decoration: none;
     background-color: var(--user-navigation--link---background);
+    box-sizing: border-box;
 }
 .login-link {
     width: 121px;
     height: 45px;
+    position: relative;
+    padding: 13px 20px 12px 12px;
+    margin-right: 10px;
 }
 .regist-link {
     width: 150px;
     height: 45px;
+    padding: 9px 13px;
 }
-.user-navigation--link:hover {
-    color: var(--user-navigation--link---hover);
-}
+.user-navigation--link:hover,
 .user-navigation--link:focus {
     color: var(--user-navigation--link---hover);
 }
 .user-navigation--link:active {
     color: var(--user-navigation--link---active);
 }
-.login-link{
-    position: relative;
-}
+
 .login-link::before{
     content: "";
     width: 20px;
     height: 17px;
-    margin-right: 4px;
+    margin-right: 7px;
     background-color: var(--basic-greylight);
     -webkit-mask-image: url("../img/header/icon-login.svg");
         mask-image: url("../img/header/icon-login.svg");
@@ -366,9 +364,7 @@ body {
   -webkit-mask-position: center;
         mask-position: center;
 }
-.login-link:hover::before{
-    background-color: var(--basic-grey);
-}
+.login-link:hover::before,
 .login-link:focus::before{
     background-color: var(--basic-grey);
 }
@@ -797,17 +793,6 @@ ul.info-list::after{
 .catalog-item:hover{
     box-shadow: 0px 4px 20px var(--manufact-img--box-shadow)
 }
-/*
-.catalog-text--box{
-    padding: 0px 10px;
-    max-width: 220px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding-bottom: 42px;
-
-}*/
 .catalog-subtitle {
     margin: 0 0 8px;
     padding: 0 10px;
@@ -835,7 +820,12 @@ ul.info-list::after{
     box-sizing: border-box;
     margin-left: 36px;
     margin-top: auto;
+    /*
+    то что было до подгонки
     padding: 11px 20px;
+    */
+    /* подгонка под макет */
+    padding: 10px 48px 10px 32px;
     width: 141px;
     font-family: "PT Sans";
     font-size: 16px;
@@ -849,6 +839,8 @@ ul.info-list::after{
 	    mask-size: cover;
     -webkit-mask-position: right;
 	    mask-position: right;
+
+
 }
 
 
@@ -1139,7 +1131,7 @@ ul.info-list::after{
     font-weight: 400;
 }
 .details-text-down{
-    margin: 25px 0 3px;
+    margin: 27px 0 4px;
 }
 .details-text {
     padding: 0;
@@ -1151,15 +1143,26 @@ ul.info-list::after{
 .details-list {
     margin: 0;
     padding-left: 32px;
-    list-style-image: url("../img/details-list.svg");
+    list-style: none
 }
 .details-items {
     margin-bottom: 12px;
     text-align: left;
     padding-left: 5px;
+    position: relative;
+}
+.details-items::before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/details-list.svg");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 2px;
+    left: -32px;
+    top: 10px;
 }
 .details-map {
-    margin-top: 32px;
+    margin-top: 19px;
 }
 .details-about-link {
     min-width: 172px;
@@ -1168,7 +1171,7 @@ ul.info-list::after{
 }
 .details-contacts-link {
    min-width: 100px;
-   margin-top: 5px;
+   margin-top: 18px;
 }
 
 /* ПОДВАЛ */
