@@ -1052,7 +1052,7 @@ ul.info-list::after{
 }
 .services-item:hover {
     background-color: var(--services-item--background---hover);
-
+    color: var(--white);
 }
 .services-item:active {
     background-color: var(--services-item--background---active);
