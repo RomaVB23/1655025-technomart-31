@@ -28,7 +28,7 @@
                     </form>
                     <ul class="user-list">
                         <li class="user-item"><a class="user-link user-link--bookmark" href="#">Закладки: 0</a></li>
-                        <li class="user-item"><a class="user-link user-link--basket" href="#">Корзина: 10</a></li>
+                        <li class="user-item"><a class="user-link user-link--basket user-link--basket-active" href="#">Корзина: 10</a></li>
                         <li class="user-item"><a class="user-link user-link--checkout" href="#">Оформить заказ</a></li>
                     </ul>
                 </div>
@@ -117,33 +117,34 @@
                 <section class="filters">
                     <h2 class="filters-title filters-title--filter">ФИЛЬТР:</h2>
                     <form method="get" action="https://echo.htmlacademy.ru/" target="_blank">
-                        <fieldset class="filters-fieldset rt">
-                            <legend class="filter-legeng">ЦЕНА</legend>
+                        <fieldset class="filters-fieldset filter-fieldset--price">
+                            <legend class="filter-legeng">ЦЕНА:</legend>
                             <div class="range-filter">
                                 <div class="range-controls">
                                     <div class="scale">
                                         <div class="bar" style="
-                                            width: 30%; margin-left: 20%">
+                                            width: 70%; margin-left: 10%">
                                         </div>
                                     </div>
                                     <div class="toggle toggle-min" tabindex="0" style="
-                                    left: 20%">
+                                    left: 8%">
                                     </div>
                                     <div class="toggle toggle-max" tabindex="0" style="
-                                    left: 50%">
+                                    left: 73%">
                                     </div>
                                 </div>
                                 <div class="price-controls">
                                 <label class="min-price">
                                     <input type="number" name="min-price" value="0">
                                 </label>
+
                                 <label class="max-price">
                                     <input type="number" name="max-price" value="30000">
                                 </label>
                                 </div>
                             </div>
                         </fieldset>
-                        <fieldset class="filters-fieldset rt">
+                        <fieldset class="filters-fieldset filter-fieldset--producers">
                             <legend class="filter-legeng">ПРОИЗВОДИТЕЛИ:</legend>
                             <ul class="filters-list">
                                 <li class="filter-option filter-checkbox">
@@ -190,10 +191,10 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="filters-fieldset">
-                            <legend class="filter-legeng">ПИТАНИЕ:</legend>
-                            <ul class="filters-list">
-                                <li class="filter-option filter-radio">
+                        <fieldset class="filters-fieldset filter-fieldset--power">
+                            <legend class="filter-legeng filter-legeng-power">ПИТАНИЕ:</legend>
+                            <ul class="filters-list ">
+                                <li class="filter-option filter-radio filter-option--radio">
                                     <input class="filter-input-radio filter-input visually-hidden"
                                         type="radio"
                                         name="power"
@@ -201,7 +202,7 @@
                                         id="filter-battery"
                                         checked
                                     />
-                                    <label class="filter-label" for="filter-battery">СЕТЕВЫЕ</label>
+                                    <label class="filter-label" for="filter-battery">АККУМУЛЯТОРНЫЕ</label>
                                 </li>
                                 <li class="filter-option filter-radio">
                                     <input class="filter-input-radio filter-input visually-hidden"
@@ -211,7 +212,7 @@
                                         id="filter-supply"
                                     />
                                     <label class="filter-label" for="filter-supply"
-                                        >АККУМУЛЯТОРНЫЕ</label
+                                        >СЕТЕВЫЕ</label
                                     >
                                 </li>
                             </ul>
@@ -365,7 +366,7 @@
                         <li class="catalog-item">
                             <div class="catalog-image--box">
                                 <img class="catalog-img"
-                                    src="img/popular-goods/snippet_2.jpg"
+                                    src="img/popular-goods/snippet_1.jpg"
                                     width="218"
                                     height="170"
                                     alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
@@ -385,7 +386,7 @@
                         <li class="catalog-item">
                             <div class="catalog-image--box">
                                 <img class="catalog-img"
-                                    src="img/popular-goods/snippet_1.jpg"
+                                    src="img/popular-goods/snippet_2.jpg"
                                     width="218"
                                     height="170"
                                     alt="Перфоратор с усиленной головкой после патрона, с прямой ручкой и большой батареей"
@@ -404,7 +405,7 @@
                     </ul>
                     <ul class="catalog-page--list">
                         <li>
-                            <a class="catalog-page-link page-number">1</a>
+                            <a class="catalog-page-link page-number page-number-active">1</a>
                         </li>
                         <li>
                             <a class="catalog-page-link page-number" href="#">2</a>
@@ -439,11 +440,11 @@
                 <div class="container">
                     <div class="footer-top--container">
                         <a class="logo logo-footer" href="index.html">
-                            <img class="logo-img"
-                                src="img/logo-technomart.svg"
-                                width="108"
-                                height="18"
-                                alt="Логотип компании..."
+                            <img class="logo-img logo-img--footer"
+                                src="img/logo-footer.svg"
+                                width="139"
+                                height="27"
+                                alt="Логотип компании ТЕХНОМАРТ"
                             />
                         </a>
                         <ul class="footer-navigation footer-navigation-up">
@@ -473,7 +474,7 @@
                 <div class="content">
                     <p class="content--text">
                         © 2010–2021 Компания «Техномарт»
-                        <br />
+                        <br>
                         Все права защищены
                     </p>
                 </div>
@@ -512,7 +513,7 @@
                     </div>
                     <div class="responsiveness-developed">
                         <p class="content--text">
-                            Разработано -
+                            Разработано &#8212;
                             <a class="responsiveness-link" href="https://htmlacademy.ru/intensive/htmlcss"
                                 >htmlacademy.ru</a
                             >
