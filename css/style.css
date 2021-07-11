@@ -959,6 +959,7 @@ ul.info-list::after{
 
 
 .manufact {
+    margin-top: 72px;
     margin-bottom: 70px;
 }
 .manufact-list {
@@ -1051,8 +1052,15 @@ ul.info-list::after{
 }
 .services-item:hover {
     background-color: var(--services-item--background---hover);
+
 }
 .services-item:active {
+    background-color: var(--services-item--background---active);
+    color: var(--text);
+    box-shadow: 0px 1px 0px 0px var(--white),
+                0px -1px 0px 0px var(--white);
+}
+.services-item-active{
     background-color: var(--services-item--background---active);
     color: var(--text);
     box-shadow: 0px 1px 0px 0px var(--white),
@@ -1808,7 +1816,7 @@ catalog
 
 .feedback-form {
     margin: 0 auto;
-    padding-top: 39px;
+    padding-top: 47px;
     display: flex;
     width: 460px;
     height: 211px;
@@ -1822,16 +1830,16 @@ catalog
     padding: 0;
  }
  .feedback-input {
-    width: 208px;
-    height: 38px;
+    width: 203px;
+    height: 31px;
     padding-left: 12px;
     margin: 0;
 }
 .feedback-textarea{
     width: 442px;
-    height: 107px;
+    height: 102px;
     padding-left: 12px;
-    padding-top: 7px;
+    padding-top: 5px;
 
 }
 .feedback-paragraph {
@@ -1844,9 +1852,8 @@ catalog
 .feedback-button {
     width: 460px;
     height: 38px;
-    margin-top: 60px;
-
-
+    margin-top: 69px;
+    font-family: "Cuprum";
 }
 
 
@@ -1859,7 +1866,7 @@ catalog
 }
 .popup-cart-down {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .popup-cart--text {
@@ -1871,10 +1878,15 @@ catalog
     padding-bottom: 105px;
     margin: 0;
 }
+.checkout-button{
+    width: 144px;
+    margin-left: 115px;
+}
 .continue-button {
+    width: 144px;
+    margin-left: 10px;
     color: var(--black);
     background-color: var(--white);
-    margin-left: 10px;
 }
 .popup-cart--image {
     position: relative;
@@ -1886,8 +1898,8 @@ catalog
     height: 66px;
     background-image: url("../img/icon-mark.svg");
     background-repeat: no-repeat;
-    left: 48px;
-    top: 55px;
+    left: 82px;
+    top: 54px;
 }
 
 /* Animations */
