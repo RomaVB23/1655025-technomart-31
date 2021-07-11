@@ -1750,8 +1750,8 @@ catalog
     z-index: 1;
     width: 22px;
     height: 22px;
-    top: 11px;
-    right: 9px;
+    top: 20px;
+    right: 13px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -1762,8 +1762,8 @@ catalog
   position: absolute;
   top: 10px;
   left: 1px;
-  width: 22px;
-  height: 3px;
+  width: 27px;
+  height: 5px;
   background-color: var(--basic-red);
 }
 .modal-close::before {
@@ -1787,7 +1787,7 @@ catalog
 
 
 .modal-map {
-    width: 943px;
+    width: 939px;
     height: 449px;
     padding-top: 7px;
 }
