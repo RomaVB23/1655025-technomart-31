@@ -1780,6 +1780,10 @@ catalog
 .filter-input-radio:focus + .filter-label{
     color: var(--basic-red);
 }
+.disabled {
+    opacity: 0.3;
+}
+
 
 
 
