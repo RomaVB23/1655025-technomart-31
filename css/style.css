@@ -569,6 +569,7 @@ ul.info-list::after{
     margin-top: 143px;
     list-style: none;
     padding: 0;
+    position: relative;
 }
 .info-title {
     font-size: 24px;
@@ -708,10 +709,10 @@ ul.info-list::after{
   }
   .slider-controls {
     position: absolute;
-    top: 742px;
-    left: 463px;
+    top: 220px;
+    left: 295px;
     display: flex;
-    width: 32px;
+    width: 30px;
     justify-content: space-between;
   }
 
