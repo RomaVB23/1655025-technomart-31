@@ -1050,10 +1050,6 @@ ul.info-list::after{
         0px -1px 0px 0px rgba(64, 80, 105, 1) inset;
 
 }
-.services-item:hover {
-    background-color: var(--services-item--background---hover);
-    color: var(--white);
-}
 .services-item:active {
     background-color: var(--services-item--background---active);
     color: var(--text);
@@ -1065,6 +1061,10 @@ ul.info-list::after{
     color: var(--text);
     box-shadow: 0px 1px 0px 0px var(--white),
                 0px -1px 0px 0px var(--white);
+}
+.services-item:not(.services-item-active):hover{
+    background-color: var(--services-item--background---hover);
+    color: var(--white);
 }
 .services-subtitle {
     font-size: 30px;
