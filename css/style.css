@@ -1087,8 +1087,8 @@ ul.info-list::after{
 .services-credit{
     position: relative;
 }
-.services-guarantee,
-.services-credit{
+
+.services-slid-close{
     display: none;
 }
 .services-delivery::before {
