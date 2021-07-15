@@ -5,7 +5,7 @@
         <title>HTML Academy: Техномарт</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
         <link rel="icon" href="favicon.ico" />
         <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="img/favicons/180.png" />
@@ -24,8 +24,9 @@
                         />
                     </a>
                     <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-                        <input class="input-search input-search--icon" type="search" placeholder="Поиск:"/>
-                    </form>
+                         <label class="visually-hidden" for="search-navigation">Поиск по сайту</label>
+                         <input class="input-search input-search--icon" type="search" placeholder="Поиск:" id="search-navigation"/>
+                     </form>
                     <ul class="user-list">
                         <li class="user-item"><a class="user-link user-link--bookmark" href="#">Закладки: 0</a></li>
                         <li class="user-item"><a class="user-link user-link--basket user-link--basket-active" href="#">Корзина: 10</a></li>
@@ -533,6 +534,6 @@
              </div>
         </section>
 
-        <script src="js/basket.js"></script>
+        <script src="js/basket.min.js"></script>
     </body>
 </html>

@@ -67,6 +67,7 @@
     --range-filter--background: rgba(247, 243, 236);
     --range-control--background: rgba(171, 171, 171);
     --price-control-dash: rgba(68, 68, 68);
+    --background--info-slider: rgb(125, 121, 121);
 
 
 }
@@ -146,7 +147,7 @@ body {
     border: none;
     outline: none;
     padding-left: 42px;
-    font-family: "Cuprum";
+    font-family: "Cuprum", Arial;
     font-size: 18px;
 }
 .input-search:focus {
@@ -570,6 +571,7 @@ ul.info-list::after{
     list-style: none;
     padding: 0;
     position: relative;
+    width: 620px;
 }
 .info-title {
     font-size: 24px;
@@ -579,7 +581,7 @@ ul.info-list::after{
     color: var(--white);
     margin-left: 22px;
     margin-top: 21px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     padding: 0;
 }
 .info {
@@ -618,15 +620,17 @@ ul.info-list::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 135px;
+    width: 135px;
     min-height: 38px;
-    padding: 10px 24px;
+    padding: 10px 10px;
     color: var(--white);
     background-color: var(--info-button);
     border: none;
-    font-family: "Cuprum";
+    font-family: "Cuprum", Arial;
     font-size: 14px;
     line-height: 18px;
+    text-decoration: none;
+    box-sizing: border-box;
 
 
 }
@@ -642,12 +646,14 @@ ul.info-list::after{
 .slider-perf {
     background-image: url("../img/slider-perf.jpg");
     background-repeat: no-repeat;
+    background-color: var(--background--info-slider);
     width: 620px;
     height: 266px;
 }
 .slider-drill {
     background-image: url("../img/slider-drill.jpg");
     background-repeat: no-repeat;
+    background-color: var(--background--info-slider);
     width: 620px;
     height: 266px;
 }
@@ -699,7 +705,7 @@ ul.info-list::after{
 .slider--shadow-box{
     width: 620px;
     height: 104px;
-    box-shadow: 0px 0px 5px  var(--box-shadow--slider);
+    background: var(--box-shadow--slider);
 }
 .slide-close {
     display: none;
@@ -808,7 +814,7 @@ ul.info-list::after{
 .catalog-subtitle {
     margin: 0 0 8px;
     padding: 0 10px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -818,7 +824,7 @@ ul.info-list::after{
 .catalog-strike {
     margin: 0 0 14px;
     padding: 0 10px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
@@ -839,7 +845,7 @@ ul.info-list::after{
     /* подгонка под макет */
     padding: 10px 48px 10px 32px;
     width: 141px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 16px;
     font-weight: 700;
     border-radius: 3px;
@@ -1013,7 +1019,7 @@ ul.info-list::after{
 .services-text {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 24px;
     text-align: left;
@@ -1076,7 +1082,7 @@ ul.info-list::after{
     font-weight: 400;
 }
 .services-text {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 24px;
     text-align: left;
@@ -1157,11 +1163,11 @@ ul.info-list::after{
     font-weight: 400;
 }
 .details-text-down{
-    margin: 27px 0 4px;
+    margin: 26px 0 2px;
 }
 .details-text {
     padding: 0;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 24px;
     text-align: left;
@@ -1185,7 +1191,7 @@ ul.info-list::after{
     width: 25px;
     height: 2px;
     left: -32px;
-    top: 10px;
+    top: 11px;
 }
 .details-map {
     margin-top: 19px;
@@ -1290,9 +1296,12 @@ ul.info-list::after{
 .socials-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    width: 134px;
-    margin-top: 18px;
+    flex-wrap: wrap;
+    min-width: 136px;
+    margin-top: 17px;
+}
+.socials-item {
+    margin: .5px;
 }
 .socials-link {
     background-color: var(--socials-link);
@@ -1414,7 +1423,7 @@ catalog
 
 .container-link {
     margin-right: 41px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
@@ -1445,9 +1454,8 @@ catalog
     list-style: none;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     width: 458px;
-
-
 }
 .filters-item-price {
     margin-right: 70px;
@@ -1459,7 +1467,7 @@ catalog
     margin-right: 46px;
 }
 .filters-link {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 18px;
     text-align: left;
@@ -1544,7 +1552,7 @@ catalog
     background-color: var(--filters-item--background);
 }
 .filter-legeng {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 17px;
     font-weight: 700;
     line-height: 30px;
@@ -1554,7 +1562,7 @@ catalog
 
 }
 .filters-title {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -1646,7 +1654,7 @@ catalog
   }
   .price-controls label {
     text-transform: uppercase;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -1679,7 +1687,7 @@ catalog
   }
 
 .filter-label {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 15px;
     line-height: 19px;
 }
@@ -1691,7 +1699,7 @@ catalog
     padding: 10px 24px;
     width: 220px;
     height: 38px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 18px;
     align-items: center;
@@ -1795,7 +1803,7 @@ catalog
     padding-bottom: 56px;
 }
 .tool-information--text{
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 24px;
     text-align: left;
@@ -1824,7 +1832,7 @@ catalog
     align-items: center;
 }
 .catalog-page-link {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 18px;
     text-align: center;
@@ -1928,7 +1936,7 @@ catalog
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Verdana;
     font-size: 13px;
     line-height: 24px;
     text-align: left;

@@ -5,7 +5,7 @@
         <title>HTML Academy: Техномарт</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
         <link rel="icon" href="favicon.ico" />
         <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="img/favicons/180.png" />
@@ -24,7 +24,8 @@
                         />
                     </a>
                     <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-                        <input class="input-search input-search--icon" type="search" placeholder="Поиск:"/>
+                        <label class="visually-hidden" for="search-navigation">Поиск по сайту</label>
+                        <input class="input-search input-search--icon" type="search" placeholder="Поиск:" id="search-navigation"/>
                     </form>
                     <ul class="user-list">
                         <li><a class="user-link user-link--bookmark" href="#">Закладки: 0</a></li>
@@ -78,23 +79,23 @@
                 <ul class="info-list">
                     <li class="info materials">
                         <h3 class="info-title">Материалы</h3>
-                        <button class="info-button" type="button">НА ЛЮБОЙ ВКУС</button>
+                        <a class="info-button" href="#">НА ЛЮБОЙ ВКУС</a>
                     </li>
                     <li class="info tools">
                         <h3 class="info-title">Инструмент</h3>
-                        <button class="info-button" type="button">НА ВСЕ СЛУЧАИ</button>
+                        <a class="info-button" href="#">НА ВСЕ СЛУЧАИ</a>
                     </li>
                     <li class="info technics">
                         <h3 class="info-title">Техника</h3>
-                        <button class="info-button" type="button">ДЛЯ СТРОЙКИ</button>
+                        <a class="info-button" href="#">ДЛЯ СТРОЙКИ</a>
                     </li>
                     <li class="info discount">
                         <h3 class="info-title">Скидка 50%</h3>
-                        <button class="info-button" type="button">НА 350 ТОВАРОВ</button>
+                        <a class="info-button" href="#">НА 350 ТОВАРОВ</a>
                     </li>
                     <li class="info delivery">
                         <h3 class="info-title">Доставка</h3>
-                        <button class="info-button" type="button">БЕСПЛАТНО</button>
+                        <a class="info-button" href="#">БЕСПЛАТНО</a>
                     </li>
                 </ul>
 
@@ -523,11 +524,11 @@
         </section>
 
 
-          <script src="js/login.js"></script>
-          <script src="js/map.js"></script>
-          <script src="js/basket.js"></script>
-          <script src="js/infoSlider.js"></script>
-          <script src="js/servicesSlider.js"></script>
+          <script src="js/login.min.js"></script>
+          <script src="js/map.min.js"></script>
+          <script src="js/basket.min.js"></script>
+          <script src="js/info-slider.min.js"></script>
+          <script src="js/services-slider.min.js"></script>
 
     </body>
 </html>
